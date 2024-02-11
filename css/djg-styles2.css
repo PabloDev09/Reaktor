@@ -1,0 +1,266 @@
+:root{
+    /*variables de css*/
+    --map-width:100px; /* WIP */
+
+
+}
+
+a:any-link{
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0);
+}
+
+a:visited{
+    text-decoration: none;
+    color: rgba(255, 0, 0, 0);
+}
+
+
+body{
+    margin:0px;
+}
+
+/* DJG - CUERPO DEL MAPA*/
+#div-mapa{
+    z-index: 0;
+    background-image: url(/img/planos/planta0.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 50%;
+    transform: translateX(-50%);
+
+   /* width: 1440px;
+    height: 1024px;*/
+   
+    width: 960px;
+    height: 683px;
+
+   /* width: 480px;
+    height: 341px;*/
+
+
+    background-color: blue;
+    /*posicionamiento*/
+}
+
+
+
+/* DJG - ESTRUCTURA DE ROWS */
+.pos-relative{
+    position:relative;
+    z-index: 1;
+}
+
+#row-guia{
+    width: 100%;
+    height: 27%;
+    margin-top: 0.7%;
+}
+
+#row-gym{
+    width: 100%;
+    height: 17.3%;
+    margin-top: 0.7%;
+}
+
+#row-almacen{
+    width: 100%;
+    height: 23%;
+    margin-top: 0.6%;
+}
+
+#row-secretaria{
+    width: 100%;
+    height: 12.5%;
+    margin-top: 0.0%;
+}
+
+#row-cafeteria{
+    width: 100%; 
+    height: 16.3%;
+    margin-top: 0.5%;
+}
+
+/*ELEMENTOS EN ROWS -----------*/ 
+
+/*SELECTORES ELEMENTOS DENTRO DE ROWS*/
+/* Selecciona los hijos de las etiquetas A dentro de row-guia. */
+#row-guia a > *{
+    /*background-color: rgba(217, 255, 0, 0.548) !important;*/
+    position: absolute;
+    border: 2px solid rgb(104, 104, 104);
+    transition: 0.15s;
+}
+
+#row-guia a > *:hover{
+    background-color: rgb(0, 125, 197) !important;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    transition: 0.15s;
+}
+
+/* Selecciona los hijos de las etiquetas A dentro de row-guia. */
+#row-gym a > *{
+    position: absolute;
+    background-color: rgba(217, 255, 0, 0.548) !important;
+    transition: 0.5s;
+}
+
+#row-gym a >*:hover{
+    position: absolute;
+    background-color: rgba(0, 125, 197, 0.637) !important;
+    transition: 0.5s;
+}
+
+/* Selecciona los hijos de las etiquetas A dentro de row-guia. */
+#row-almacen a > * {
+    position: absolute;
+    color: white !important;
+}
+
+#row-almacen a > *:hover{
+    position: absolute;
+    background-color: rgba(0, 125, 197, 0.637) !important;
+
+}
+
+/*ELEMENTOS ROW GUIA*/
+/* Posicionamiento absoluto de elementos de ROW GUIA*/
+#aula1guia{
+    z-index: 2;
+    float: left;
+    top: 5%;
+    left: 9.2%;
+    height: 79%;
+    width: 23.8%;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 100% 100%, 62% 100%, 62% 77%, 0 77%);
+}
+/*
+#tapon-aula1guia{
+    position: absolute;
+    z-index: 3;
+    float: left;
+    top: 69.0%;
+    left: 8.7%;
+    height: 18%;
+    width: 15%;
+    border-top: 2px solid rgb(138, 138, 138);
+    border-right: 2px solid rgb(115, 115, 115);
+    background-color: rgba(255, 255, 255, 1);
+}*/
+
+#pista-padel{
+    z-index: 2;
+    transform: rotate(5.1deg);
+    top: 39.8%;
+    left: 74.1%;
+    height: 61%;
+    width: 23.5%;
+}
+
+/*ELEMENTOS ROW GYM*/
+/* Posicionamiento absoluto de elementos de ROW GYM*/
+#gym{
+    left: 6.8%;
+    top: 31%;
+    width: 21.3%;
+    height: 72%;
+
+}
+#aula0-11{
+    left: 43.6%;
+    top: 3%;
+    width: 9.5%;
+    height: 72%;
+}
+
+#aula0-9{
+    left: 53.4%;
+    top: 3%;
+    width: 13.5%;
+    height: 72%;
+
+}
+ 
+#aula0-5{
+    left: 82.5%;
+    top: 16%;
+    width: 10.3%;
+    height: 65%;
+
+}
+
+
+/*ELEMENTOS ROW ALMACEN*/
+/* Posicionamiento absoluto de elementos de ROW ALMACEN*/
+#almacen1{
+    height: 43.5%;
+    width: 3.3%;
+    top:43.4%;
+    left:7.9%;
+}
+
+#patio{
+    height: 68.5%;
+    width: 22.4%;
+    top:29%;
+    left:11.7%;
+}
+
+#tapon-patio{
+    z-index: 3;
+    position: absolute;
+    background-color: rgb(255, 255, 255) !important;
+    top:91.5%;
+    left: 31%;;
+    height: 8%;
+    width: 4%;
+    transform: rotate(-37deg);
+}
+
+
+#salon-actos{
+    height: 48.5%;
+    width: 26.4%;
+    top:37%;
+    left:43.7%;
+} 
+
+#orientacion{
+    height: 48.5%;
+    width: 5.1%;
+    top:37%;
+    left: 70.3%;
+} 
+
+#jefatura{
+    height: 48.5%;
+    width: 5.1%;
+    top:37%;
+    left:75.5%;
+}
+
+#taller-lince{
+    height: 48.5%;
+    width: 7.1%;
+    top:37%;
+    left:80.8%;
+}
+
+#aula0-7{
+    height: 51.5%;
+    width: 8%;
+    top:-16.4%;
+    right:9.5%;
+}
+
+#archivo{
+    height: 35.2%;
+    width: 2.2%;
+    top:49%;
+    right:7.2%;
+}
+
