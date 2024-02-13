@@ -1,0 +1,40 @@
+nav{
+    height: 20%;
+}
+
+#Horario{
+
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+#Profesor-Horario{
+    border: 5px black;
+    border-radius: 5;
+    width: 20%;
+    text-align: center;
+
+}
+
+#Horario-Maestros{
+
+    width: 20%;
+    text-align: center;
+
+}
+
+#Grupo-Horario{
+
+    width: 20%;
+    text-align: center;
+
+}
+
+#Horario-Grupos{
+    
+    width: 20%;
+    text-align: center;
+
+}
