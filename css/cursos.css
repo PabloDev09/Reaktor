@@ -12,7 +12,7 @@ nav{
 
 nav a{
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     text-decoration: none;
     color: white;
@@ -30,18 +30,21 @@ nav h1{
 
 main{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    margin-left: 3.5%;
+    margin-right: 3.5%;
+    padding: 5px;
 }
 
 .formulario{
-    width: 50%;
-    margin-top: 2%;
-    margin-bottom: 2%;
-    padding: 15px;
+    margin: 2%;
+    padding: 2%;
     background-color: #ffff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.5);
 }
 
 .formulario h1{
@@ -51,14 +54,15 @@ main{
     font-size: 2em;
 }
 
-#listado-endpoint-3{
+.listado-endpoint-3{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     margin-top: 2%;
 }
 
-#listado-endpoint-3 button{
+.listado-endpoint-3 button{
     padding: 5px;
     background-color: #3f48cc;
     color: white;
@@ -67,16 +71,37 @@ main{
     cursor: pointer;
 }
 
-#listado-endpoint-3 button:hover{
+.listado-endpoint-3 button:hover{
     background-color: #676ed6;
     border: transparent;
     border-radius: 5px;
 }
 
+input[type="submit"]{
+    margin-top: 2%;
+    padding: 5px;
+    background-color: #3f48cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="text"]{
+    padding: 5px;
+    color: white;
+    border-color: #3f48cc;
+    border-radius: 5px;
+}
+
+label{
+    margin-top: 2%;
+}
 
 footer{
     position: fixed;
     display: flex;
+    justify-content: center;
     width: 100%;
     bottom: 0;
     padding: 10px;    
