@@ -212,6 +212,7 @@ body{
     width: 22.4%;
     top:29%;
     left:11.7%;
+    clip-path: polygon(0% 0%, 100% 0, 100% 81%, 79% 100%, 0% 100%);
 }
 
 #tapon-patio{
