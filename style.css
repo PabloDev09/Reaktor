@@ -1,0 +1,43 @@
+/* Aquí irá la fuente */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    background-color: rgb(31, 155, 203);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 2rem;
+    height: 10rem;
+}
+
+a, li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-header img{
+    height: 100px;
+    width: auto;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li{
+    margin-right: 1.5rem;
+    background-color: skyblue;
+    border: 2px solid;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.2rem;        
+}
+
+.nav-menu a:hover{
+    color: black;
+}
