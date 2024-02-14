@@ -1,0 +1,37 @@
+
+body {
+    margin: 0;
+}
+main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    
+}
+
+form {
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+}
+label{
+    padding-top: 1rem;    
+
+}
+
+button{
+    margin-top: 2rem;
+}
+
+.end-point6{
+    text-align: center;
+}
+
+.end-point6, 
+.end-point15,
+.end-point16{
+    width: 25%;
+}
