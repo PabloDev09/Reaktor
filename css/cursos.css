@@ -6,7 +6,8 @@ nav{
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
-    background-color: rgb(248, 248, 189);
+    background-color: #3f48cc;
+    color: white;
 }
 
 nav a{
@@ -14,17 +15,17 @@ nav a{
     padding: 10px;
     text-align: center;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: white;
 }
 
 nav a:hover{
-    background-color: beige;
+    background-color: #676ed6;
 }
 
 nav h1{
     width: 100%;
     padding: 10px;
-    color: rgb(15, 15, 15);
+    color: white;
 }
 
 main{
@@ -58,14 +59,17 @@ main{
 }
 
 #listado-endpoint-3 button{
-    background-color: beige;
-    border-color: black;
+    padding: 5px;
+    background-color: #3f48cc;
+    color: white;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 #listado-endpoint-3 button:hover{
-    background-color: rgb(199, 199, 180);
-    border-color: transparent;
+    background-color: #676ed6;
+    border: transparent;
     border-radius: 5px;
 }
 
@@ -76,5 +80,6 @@ footer{
     width: 100%;
     bottom: 0;
     padding: 10px;    
-    background-color: rgb(248, 248, 189);
+    background-color: #3f48cc;
+    color: white;
 }
