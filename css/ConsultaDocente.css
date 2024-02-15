@@ -1,0 +1,15 @@
+body {
+    margin: 20px;
+}
+
+button {
+    background-color: hsl(0, 0%, 94%);
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 84%); /* CAMBIAR COLORES */
+}
+
+button:active {
+    background-color: hsl(0, 0%, 74%); /* CAMBIAR COLORES */
+}

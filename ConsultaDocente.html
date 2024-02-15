@@ -1,0 +1,62 @@
+<!-- profesorado de guardía. "how to embed document html".
+     insertar hoja de cálculo que enseñará, por cada hora,
+     profesor que falta y profesor sustituto
+    
+     consulta 9                                             -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Consulta Docentes</title>
+        <link rel="stylesheet" href="/css/ConsultaDocente.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                Aquí irá la navbar
+            </nav>
+        </header>
+        <br>
+        <hr>
+        <br>
+        <main>
+            <div id="container">
+                <div id="consulta_profesor">
+                    <label for="profesor">Profesor: </label>
+                    <select name="profesor" id="profesor">
+                        <option value="default">Selecciona un profesor</option>
+                        <option value="Carlos Cano Ladera">Carlos Cano Ladera</option>
+                        <option value="Encarnación Perálvarez Aguilera">Encarnación Perálvarez Aguilera</option>
+                        <option value="Francisco Manuel Benítez Chico">Francisco Manuel Benítez Chico</option>
+                        <option value="Francisco Martínez Ruíz">Francisco Martínez Ruíz</option>
+                        <option value="Jose Antonio Sánchez García">Jose Antonio Sánchez García</option>
+                        <option value="Manuel Amaro Parradro">Manuel Amaro Parradro</option>
+                        <option value="Manuel Arroyo Juan">Manuel Arroyo Juan</option>
+                        <option value="Manuel Barbero Alcalde">Manuel Barbero Alcalde</option>
+                        <option value="Rafael Delgado Cubilla">Rafael Delgado Cubilla</option>
+                        <option value="Raquel Molina Mesa">Raquel Molina Mesa</option>
+                        <option value="Vicente Serrano Martínez">Vicente Serrano Martínez</option>
+                    </select>
+                    <br>
+                    <label for="hora">Tramo Horario: </label>
+                    <select name="hora" id="hora">
+                        <option value="default">Ahora mismo</option>
+                        <option value="primera">8:15 - 9:15</option>
+                        <option value="segunda">9:15 - 10:15</option>
+                        <option value="tercera">10:15 - 11:15</option>
+                        <option value="cuarta">11:45 - 12:45</option>
+                        <option value="quinta">12:45 - 13:45</option>
+                        <option value="sexta">13:45 - 14:45</option>
+                    </select>
+                    <br>
+                    <label for="dia">Día: </label>
+                    <input type="date" id="dia" value="2024-02-29"> <!-- aquí debería ir el día actual por defecto -->
+                    <br>
+                    <button>Localización</button>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
