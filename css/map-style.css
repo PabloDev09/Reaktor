@@ -10,6 +10,18 @@
     --map-height:827px;
 }
 
+@keyframes rotacion{
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(230deg);
+    }
+
+}
+/*
 .contenedor{
      background-color: rgb(148, 255, 127);
      display: grid;
@@ -17,7 +29,7 @@
      "nav nav map"
      "panel panel map"
     ;
-}
+}*/
 
 .navbar{
     grid-area: nav;
@@ -32,8 +44,9 @@
 .caja-mapa{
     grid-area: map;
     background-color: rgb(255, 136, 0);
+    height: var( --map-height );
+    width: var( --map-width );
 }
-
 /*
 .planta-baja-terrenos{
     position: relative;
@@ -43,51 +56,144 @@
     background-size: contain;
     background-repeat: no-repeat;
     float:right;
-}
-*//*
+}*/
+
 .planta-baja{
-    position: relative;
     background-image: url(../img/planos/Planta-baja.png);
     height: var( --map-height );
     width: var( --map-width );
     background-size: contain;
     background-repeat: no-repeat;
-
-}*/
+    position: relative;
+}
 
 .planta-primera{
-    position: relative;
     background-image: url(../img/planos/Planta-primera.png);
     height: var( --map-height );
     width: var( --map-width );
     background-size: contain;
     background-repeat: no-repeat;
+    z-index: 0;
+    position: relative;
 
 }
-/*
+
 .planta-segunda{
-    position: relative;
     background-image: url(../img/planos/Planta-segunda.png);
     height: var( --map-height );
     width: var( --map-width );
     background-size: contain;
     background-repeat: no-repeat;
+    position: relative;
 
-}*/
+}
 
 .target{
     position: absolute;
-    background-color: rgba(255, 255, 0, 0.452);
-    border: 1px solid gray;
+    background-color: rgba(255, 255, 0, 0.26);
+    border: 1px solid rgb(0, 0, 0);
 }
 
 .target:hover{
     position: absolute;
-    background-color: rgba(28, 46, 146, 0.452);
+    background-color: rgba(28, 46, 146, 0.5);
     border: 1px solid gray;
 }
+/*ELEMENTOS AULAS PLANTA BAJA*/
 
-/*ELEMENTOS AULAS PRIMERA PLANTA*/
+#aula-2ndo-Guia{
+    height: 14.5%;
+    width: 7%;
+    top: 1.6%;
+    left: 14%;
+}
+
+#aula-1ero-Guia-A{
+    height: 9%;
+    width: 7%;
+    top: 1.6%;
+    left: 21%;
+}
+
+#aula-1ero-Guia-B{
+    height: 9%;
+    width: 7%;
+    top: 1.6%;
+    left: 28%;
+}
+
+#gimnasio{
+    height: 11%;
+    width: 18.4%;
+    top:29.5%;
+    left:12%;
+}
+
+#aula0-11{
+    height: 10.8%;
+    width: 8.1%;
+    top:25.3%;
+    left: 44.2%;
+}
+
+#aula0-9{
+    height: 10.8%;
+    width: 11.9%;
+    top:25.3%;
+    left: 52.6%;
+}
+
+#aula0-5{
+    height: 9.5%;
+    width: 9%;
+    top: 27.5%;
+    right: 12.8%;
+}
+
+#pista-padel{
+    height: 14.4%;
+    width: 20.6%;
+    top: 9.7%;
+    right: 8.6%;
+    transform: rotate(5.25deg);
+}
+
+#aula0-7{
+    height: 10.3%;
+    width: 7.1%;
+    top: 37.4%;
+    right: 14.8%;
+}
+
+#aula0-3{
+    height: 10%;
+    width: 3.6%;
+    top: 61.6%;
+    right: 13.8%;
+}
+
+#aula0-1{
+    height: 10%;
+    width: 5.5%;
+    top: 61.6%;
+    right: 17.7%;
+}
+
+#aula0-2-norte{
+    height: 13.2%;
+    width: 4.5%;
+    top: 72.8%;
+    left: 12%;
+}
+
+#aula0-2-sur{
+    height: 13.2%;
+    width: 4.5%;
+    top: 72.8%;
+    left: 16.7%;
+}
+
+/*ELEMENTOS AULAS PLANTA PRIMERA*/
 #aula1-11{
     height: 25.3%;
     width: 11.3%;
