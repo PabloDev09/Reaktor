@@ -1,0 +1,171 @@
+.Contenido {
+    background-color: aquamarine;
+    margin-top: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    background-color: lightblue;
+    
+}
+
+.botonaplicar{
+    margin-top: 2%;
+    margin-left: 90%;
+    max-width: min-content;
+    font-size: 150%;
+    font-style: italic;
+    border-color: red;
+    background-color: lightblue;
+}
+.clases,
+.Puntos,
+.alumnos{
+    display: inline-block;
+    flex-direction: row;
+    max-width: 57%;
+    justify-content: space-between;
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+ul {
+    margin-top: 3%;
+    text-align: right;
+    max-width: fit-content;
+    list-style-type: none;
+    background-color: aquamarine;
+    border-color: black;
+}
+
+h1{
+    color: black;
+}
+
+h2,li{
+    display: flex;
+    align-items: space-around;
+    border: 1%;
+}
+
+html{
+    background-color: rgba(48, 230, 123, 0.705);
+}
+
+.ventana{
+    background-color:aqua;
+    width:50%;
+    padding: 1% 2%;
+    margin: 20% auto;
+    position: relative;
+  }
+  .modal{
+    background-color: rgba(0,0,0,.8);
+    position:fixed;
+    top:-2.5%;
+    right:0;
+    bottom:0;
+    left:0;
+    opacity:0;
+    pointer-events:none;
+    transition: all 1s;
+  }
+  #IrVentanaFlotante:target{
+    opacity:1;
+    pointer-events:auto;
+  }
+
+img{
+    width: 20%;
+}
+
+/* Aquí irá la fuente que usaremos para la web */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+header{
+    background-color: rgb(31, 155, 203);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0.5rem 2rem;    
+}
+
+a, li{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo-header img{
+    width: 75px;
+}
+
+.nav-menu ul{
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu li{
+    margin-right: 1.5rem;
+    background-color: skyblue;
+    border: 2px solid;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.2rem;        
+}
+
+.nav-menu a:hover{
+    color: black;
+}
+
+.menu-icon img{
+    width: 30px;
+    height: 30px;
+    border-radius: 2px;
+}
+
+.menu-icon, #check{
+    display: none;
+}
+
+@media (max-width:768px){   /*Si fuera para dispositivos móviles principalmente usaríamos min-width*/
+    .checkbtn{
+        display: block;
+    }
+    .menu-icon{
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;    /*Sale la manita para saber que es clickable*/
+    }
+    .nav-menu ul{
+        display: block;
+        position: fixed;
+        top:70px;
+        left:-100%;
+        background: #222;
+        width: 100%;
+        height: 100vh;
+        right: 0;
+    }
+    .nav-menu ul li{
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    #check:checked ~ ul{    /*Aquí accedemos al id check que está en label e input y que afecta a toda la ul*/
+        left: 0;    /**/
+        transition: all 0.25s;  /*Activamos una transición para que el menú aparezca*/
+    }
+}
+ 
+  
