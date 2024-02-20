@@ -5,10 +5,10 @@ document.addEventListener("DOMContentLoaded", function () {
     mostrarPassWord.addEventListener("click", function () {
         if (passwordInput.type === "password") {
             passwordInput.type = "text";
-            mostrarPassWord.style.backgroundImage = "url('../img/mostrar-contrasena.svg')";
+            mostrarPassWord.style.backgroundImage = "url('../img/svg/mostrar-contrasena.svg')";
         } else {
             passwordInput.type = "password";
-            mostrarPassWord.style.backgroundImage = "url('../img/ocultar-contrasena.svg')";
+            mostrarPassWord.style.backgroundImage = "url('../img/svg/ocultar-contrasena.svg')";
         }
     });
 });
