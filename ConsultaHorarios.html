@@ -12,17 +12,19 @@
     </nav>
     <div id="Horario">
         <div id="Profesor-Horario">
-            <form action="">
-                <label for="">Nombre del Profesor</label>
+            <form action="#">
+                <label for="Maestros">Maestros</label>
                 <p></p>
-                <input type="text" placeholder="Manuel">
+                <select name="Maestros-Horarios" id="Maestros">
+                  <option value="Francisco">Francisco Manuel Benitez Chico </option>
+                  <option value="Vicente">Vicente Serrano Martínez </option>
+                  <option value="Jose">Jose Antonio Sánchez Garcia</option>
+                  <option value="Carlos">Carlos Cano Ladera</option>
+                  <option value="Raquel">Raquel Molina Mesa</option>
+                </select>
                 <p></p>
-                <label for="">Apellidos del Profesor</label>
-                <p></p>
-                <input type="text" placeholder="Lopez Soto">
-                <p></p>
-                <button id="button-Profesor-Horario"> Enviar </button>
-            </form>
+                <input type="submit" value="Enviar" />
+          </form>
         </div>
         
         <div id="Horario-Maestros">
@@ -33,13 +35,24 @@
         </div>
         
         <div id="Grupo-Horario">
-            <form action="">
-                <label for="">Nombre Grupo</label>
+            <form action="#">
+                <label for="Grupos">Grupos</label>
                 <p></p>
-                <input type="text" placeholder="1º DAM">
+                <select name="Grupos-Horarios" id="Grupos">
+                  <option value="1ESO">1º ESO </option>
+                  <option value="2ESO">2º ESO </option>
+                  <option value="3ESO">3º ESO </option>
+                  <option value="4ESO">4º ESO </option>
+                  <option value="1BACH">1º BACH </option>
+                  <option value="2Bach">2º BACH </option>
+                  <option value="1DAM">1º DAM </option>
+                  <option value="1DAW">1º DAW </option>
+                  <option value="2DAM">2º DAM </option>
+                  <option value="2DAW">2º DAW </option>
+                </select>
                 <p></p>
-                <button id="button-Grupo-Horario"> Enviar </button>
-            </form>
+                <input type="submit" value="Enviar" />
+          </form>
         </div>
         
         <div id="Horario-Grupos">
