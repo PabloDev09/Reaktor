@@ -36,6 +36,19 @@
 
 }
 
+#rotacionActiva{
+    font-weight: bold;
+    color: green;
+}
+
+#rotacionNoActiva{
+    font-weight: bold;
+    color: red;
+}
+
+
+
+
 #panel{
     padding-top: 20px;
     padding-left: 20px;
