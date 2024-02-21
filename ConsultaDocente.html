@@ -1,9 +1,4 @@
-<!-- profesorado de guardía. "how to embed document html".
-     insertar hoja de cálculo que enseñará, por cada hora,
-     profesor que falta y profesor sustituto
-    
-     consulta 9                                             -->
-
+<!-- ABEL -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -11,16 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Consulta Docentes</title>
         <link rel="stylesheet" href="/css/ConsultaDocente.css">
+        <script src="/js/currentDate.js"></script>
     </head>
     <body>
         <header>
             <nav>
-                Aquí irá la navbar
+                navbar
             </nav>
         </header>
-        <br>
-        <hr>
-        <br>
+        <br><hr><br>
         <main>
             <div id="container">
                 <div id="consulta_profesor">
@@ -39,7 +33,7 @@
                         <option value="Raquel Molina Mesa">Raquel Molina Mesa</option>
                         <option value="Vicente Serrano Martínez">Vicente Serrano Martínez</option>
                     </select>
-                    <br>
+                    <br><br>
                     <label for="hora">Tramo Horario: </label>
                     <select name="hora" id="hora">
                         <option value="default">Ahora mismo</option>
@@ -50,12 +44,36 @@
                         <option value="quinta">12:45 - 13:45</option>
                         <option value="sexta">13:45 - 14:45</option>
                     </select>
-                    <br>
+                    <br><br>
                     <label for="dia">Día: </label>
-                    <input type="date" id="dia" value="2024-02-29"> <!-- aquí debería ir el día actual por defecto -->
-                    <br>
-                    <button>Localización</button>
+                    <input type="date" id="dia"> <!-- Aparece por defecto el día actual -->
+                    <script>document.getElementById("dia").valueAsDate = new Date();</script>
+                    <br><br>
+                    <button>Localización</button> <!-- Devolverá aula en la que se encuentra el profesor actualmente o en el tramo horario elegido y asignatura impartida -->
                 </div>
+
+                <div id="consulta_curso">
+                    <label for="curso">Curso: </label>
+                    <select name="curso" id="curso">
+                        <option value="default">Selecciona un curso</option>
+                        <option value="1º ESO">1º ESO</option>
+                        <option value="2º ESO">2º ESO</option>
+                        <option value="3º ESO">3º ESO</option>
+                        <option value="4º ESO">4º ESO</option>
+                        <option value="1º BACH">1º BACH</option>
+                        <option value="2º BACH">2º BACH</option>
+                        <option value="1º DAM">1º DAM</option>
+                        <option value="2º DAM">2º DAM</option>
+                        <option value="1º DAW">1º DAW</option>
+                        <option value="2º DAW">2º DAW</option>
+                    </select>
+                    <br><br>
+                    <button>Profesor</button> <!-- Devolverá qué profesor se encuentra en el aula actualmente o en el tramo horario elegido y asignatura impartida -->
+                </div>
+            </div>
+            <br><hr><br>
+            <div id="container2"> <!-- Hoja de cálculo: mostrará, por cada hora, profesor que falta y profesor sustituto -->
+                <iframe id="hojacalculo" src="https://onedrive.live.com/embed?resid=370B3DAE70E66DD4%212895&authkey=!AEWXzF8NKl6X2lo&em=2"></iframe> <!-- EXCEL PROVISIONAL -->
             </div>
         </main>
     </body>

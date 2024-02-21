@@ -1,15 +1,40 @@
+/* ABEL */
+
 body {
-    margin: 20px;
+    margin: 30px;
+}
+
+nav {
+    height: 80px;
 }
 
 button {
-    background-color: hsl(0, 0%, 94%);
+    background-color: hsl(0, 0%, 94%); /* CAMBIAR COLORES */
 }
 
 button:hover {
-    background-color: hsl(0, 0%, 84%); /* CAMBIAR COLORES */
+    background-color: hsl(0, 0%, 84%);
 }
 
 button:active {
-    background-color: hsl(0, 0%, 74%); /* CAMBIAR COLORES */
+    background-color: hsl(0, 0%, 74%);
+}
+
+#container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#consulta_profesor {
+    text-align: center;
+}
+
+#consulta_curso {
+    text-align: center;
+}
+
+#hojacalculo {
+    width: 100%;
+    height: 400px;
+    border: 2px solid black;
 }
