@@ -2,7 +2,6 @@
     padding:0;
     margin:0;
     font-size: 16px;
-    border: 1px solid black;
 }
 
 :root{
@@ -38,23 +37,22 @@
 }
 
 #panel{
-    width: 25%;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 20%;
     height: 913px;
-    background-color: red;
+    background-color: rgb(215, 244, 253);
     float: left;
 }
 
 .contenedor{
     width: 74%;
     height: 913px;
-    background-color: cyan;
-    overflow: scroll;
+    background-color: rgb(255, 249, 169);
     float: left;
 }
 
 .caja-mapa{
-    margin-left: auto;
-    margin-right: auto;
     background-color: rgb(255, 136, 0);
     height: var( --map-height );
     width: var( --map-width );
