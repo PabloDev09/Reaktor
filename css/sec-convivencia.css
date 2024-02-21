@@ -3,7 +3,7 @@ body{
 }
 .Contenido {
     background-color: rgb(138, 138, 255);    
-    margin-top: 3%;
+    margin-top: 0%;
     display: flex;
     justify-content: space-around;
 }
@@ -12,6 +12,9 @@ nav{
     background-color: rgb(138, 138, 255);    
 }
 
+.botonaplicar a:hover{
+    color: purple;
+}
 .botonaplicar{
     margin-top: 2%;
     margin-left: 90%;
@@ -39,7 +42,7 @@ ul {
     text-align: right;
     max-width: fit-content;
     list-style-type: none;
-    background-color: aquamarine;
+    background-color: white;
     border-color: black;
 }
 
@@ -61,6 +64,10 @@ html{
     background-color: rgba(48, 230, 123, 0.705);
 }
 /*configuración de ventana*/
+.opcion{
+    display: flex;
+    max-width: max-content;
+}
 .ventana{
     background-color: rgb(138, 138, 255);    
     width:50%;
@@ -122,7 +129,7 @@ a, li{
 .nav-menu li{
     margin-right: 1.5rem;
     background-color: skyblue;
-    border: 2px solid;
+    border: 1% solid;
     padding: 0.25rem 0.75rem;
     border-radius: 0.2rem;        
 }
