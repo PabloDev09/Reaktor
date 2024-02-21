@@ -68,25 +68,28 @@
     background-repeat: no-repeat;
 }/*/
 
-.planta-baja{
+#planta-baja{
     background-image: url(../img/planos/Planta-baja.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    display: block;
 }
 
-.planta-primera{
+#planta-primera{
     background-image: url(../img/planos/Planta-primera.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    display: none;
 }
 
-.planta-segunda{
+#planta-segunda{
     background-image: url(../img/planos/Planta-segunda.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    display: none;
 }
 
 .target{
