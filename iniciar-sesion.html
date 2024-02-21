@@ -4,17 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/iniciar-sesion.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>Iniciar Sesión - Reaktor</title>
 </head>
 <body>
     <script src="js/visualizar-contrasena.js"></script>
-    <nav>
-        <h1>REAKTOR</h1>
-        <a href="#">Planos del centro</a>
-        <a href="#">Consultas sobre docentes</a>
-        <a href="#">Consultas sobre alumnos</a>
-        <a href="#">Información aula convivencia</a>
-    </nav>
+    <header class="header">
+        <div class="logo-header">
+            <a href=""><img src="img/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="img/menuhamburguesa.svg" alt="menu"></i>
+            </label>
+            <ul>
+                <li><a href="#link1">Administración</a></li>
+                <li><a href="#link2">Profesores</a></li>
+                <li><a href="#link3">Alumnos</a></li>
+                <li><a href="#link4">Horarios</a></li>
+                <li><a href="#link5">Convivencia</a></li>
+                <li><a href="#link6">Mapas</a></li>
+            </ul>
+        </div>
+   </header> 
     <main>
         <div class="login">
             <h1>Iniciar Sesión</h1>
