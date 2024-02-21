@@ -54,7 +54,7 @@ h2,li{
 html{
     background-color: rgba(48, 230, 123, 0.705);
 }
-
+/*configuración de ventana*/
 .ventana{
     background-color:aqua;
     width:50%;
