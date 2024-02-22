@@ -1,7 +1,3 @@
-nav{
-    height: 20%;
-}
-
 #Horario{
 
     margin-top: 5%;
@@ -10,35 +6,35 @@ nav{
 
 }
 
-#Profesor-Horario{
+#horario-seleccionar-maestro{
 
     width: 20%;
     text-align: center;
 
 }
 
-#Horario-Maestros{
+#horario-todos-maestros{
 
     width: 20%;
     text-align: center;
 
 }
 
-#Grupo-Horario{
+#horario-seleccionar-grupo{
 
     width: 20%;
     text-align: center;
 
 }
 
-#Horario-Grupos{
+#horario-todos-grupos{
     
     width: 20%;
     text-align: center;
 
 }
 
-#horarios-Container{
+#horarios-container{
     min-height: 100%;
     text-align: center;
     margin-left: 10%;

@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/ColsultaHorario.css">
+    <link rel="stylesheet" href="css/navbar.css">
     <title>ConsultaHorarios</title>
 </head>
 <body>
-    <nav>
-        ads
-    </nav>
+    <header class="header">
+        <div class="logo-header">
+            <a href=""><img src="img/logo.jpg" alt="logo"></a>
+        </div>
+        <div class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="img/menuhamburguesa.svg" alt="menu"></i>
+            </label>
+            <ul>
+                <li><a href="#link1">Administración</a></li>
+                <li><a href="#link2">Profesores</a></li>
+                <li><a href="#link3">Alumnos</a></li>
+                <li><a href="#link4">Horarios</a></li>
+                <li><a href="#link5">Convivencia</a></li>
+                <li><a href="#link6">Mapas</a></li>
+            </ul>
+        </div>
+   </header>
     <div id="Horario">
-        <div id="Profesor-Horario">
+        <div id="horario-seleccionar-maestro">
             <form action="#">
                 <label for="Maestros">Maestros</label>
                 <p></p>
@@ -27,14 +44,14 @@
           </form>
         </div>
         
-        <div id="Horario-Maestros">
+        <div id="horario-todos-maestros">
             <p>Horario de todos los maestros</p>
             <form action="">
                 <button id="button-Horario-Maestros"> Ver </button>
             </form>
         </div>
         
-        <div id="Grupo-Horario">
+        <div id="horario-seleccionar-grupo">
             <form action="#">
                 <label for="Grupos">Grupos</label>
                 <p></p>
@@ -55,7 +72,7 @@
           </form>
         </div>
         
-        <div id="Horario-Grupos">
+        <div id="horario-todos-grupos">
             <p>Horario de todos los Grupos</p>
             <form action="">
                 <button id="button-Horario-Grupo"> Ver </button>
@@ -64,7 +81,7 @@
 
 
     </div>
-    <div id="horarios-Container">
+    <div id="horarios-container">
     <embed type="text/html" src="res\Tema 6.Derecho del trabajo (1).pdf"  width="100%" height="1000px">
     </div>
 </body>
