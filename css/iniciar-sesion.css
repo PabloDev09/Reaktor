@@ -11,33 +11,6 @@ body{
     min-height: 100vh;
 }
 
-nav{
-    position: fixed;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 100%;
-    background-color: var(--main-color);
-}
-
-nav h1{
-    color: white;
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-nav a{
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    padding: 15px;
-}
-
-nav a:hover{
-    background-color: rgb(59, 59, 252);
-}
-
 main{
     display: flex;
     align-items: center;
@@ -108,17 +81,4 @@ main{
 .password-icon{
     display: flex;
     justify-content: space-between;
-}
-
-footer{
-    position: fixed;
-    text-align: center;
-    width: 100%;
-    bottom: 0;
-    padding: 15px;
-    background-color: var(--main-color);
-}
-
-footer p{
-    color: white;
 }
