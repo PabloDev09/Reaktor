@@ -89,6 +89,18 @@
     display: block;
 }
 
+#planta-segunda>* , #planta-primera>div , #planta-baja>* {
+    position: absolute;
+    background-color: rgba(255, 255, 0, 0.26);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#planta-segunda>*:hover , #planta-primera>*:hover , #planta-baja>*:hover {
+    position: absolute;
+    background-color: rgba(28, 46, 146, 0.5);
+    border: 1px solid gray;
+}
+
 #planta-primera{
     background-image: url(../img/planos/Planta-primera.png);
     background-size: contain;
@@ -105,16 +117,9 @@
     display: none;
 }
 
-.target{
-    position: absolute;
-    background-color: rgba(255, 255, 0, 0.26);
-    border: 1px solid rgb(0, 0, 0);
-}
 
 .target:hover{
-    position: absolute;
-    background-color: rgba(28, 46, 146, 0.5);
-    border: 1px solid gray;
+
 }
 
 /*ELEMENTOS AULAS PLANTA BAJA*/

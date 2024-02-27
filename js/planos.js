@@ -110,8 +110,6 @@ botonRotacion.onclick = function(){
     else if (rotacion==false){
         indicadorRotacion.innerHTML = '<p id="rotacionNoActiva">Rotacion: Desactivada</p>';
     }
-    
-
 }
 
 
