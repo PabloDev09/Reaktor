@@ -1,0 +1,223 @@
+<!DOCTYPE html> 
+<html lang="en">
+    
+    <head>
+         <meta charset="UTF-8"> 
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Lavabos</title>
+         <link rel="stylesheet" href="lavabos.css">
+    </head>
+
+    <body>
+
+        <header>
+            <div class="logo">
+                <img src="wc.jpg" alt="logo-seccion">
+                <h2 class="nombre-seccion">Lavabos</h2>
+            </div>
+        </header>
+
+        <!--Tabla 1: Hace referencia al registro de ida y vuelta del baño de un alumno-->
+
+        <div class="table-title">
+            <h2>Registrar ida y vuelta</h2>
+        </div>
+
+        <div class="table-record-01">
+
+            <div class="configuration-header">
+            
+                <div class="add">
+                    <span>Datos</span>
+                    <select name="course-select">
+                        <option value="course-option">Curso</option>
+                        <option value="1 ESO">1 ESO</option>
+                        <option value="2 ESO">2 ESO</option>
+                    </select>
+    
+                    <select name="group-select">
+                        <option value="group-option">Grupo</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+
+                    <div class="browse">
+                        <input type="search" class="nombre-apellido-search" placeholder="Nombre y apellidos">
+                    </div>
+                </div>
+    
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Curso</th>
+                        <th>Grupo</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lucía</td>
+                        <td>García González</td>
+                        <td>1 ESO</td>
+                        <td>A</td>
+                        <td>
+                            <span class="action-btn">
+                                <a href="#">Ida</a>
+                                <a href="#">Vuelta</a>
+                            </span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!--Tabla 2: Hace referencia a las estadísticas determinadas de un alumno-->
+
+        <div class="table-title">
+            <h2>Estadísticas del alumno</h2>
+        </div>
+
+        <div class="table-record-02">
+
+            <div class="configuration-header">
+            
+                <div class="add">
+                    <span>Datos</span>
+                    <select name="course-select">
+                        <option value="course-option">Curso</option>
+                        <option value="1 ESO">1 ESO</option>
+                        <option value="2 ESO">2 ESO</option>
+                    </select>
+    
+                    <select name="group-select">
+                        <option value="group-option">Grupo</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+
+                    <div class="browse">
+                        <input type="search" class="nombre-apellido-search" placeholder="Nombre y apellidos">
+                    </div>
+
+                </div>
+
+                <div class="date">
+                    <span>Periodo</span>
+                    <input type="search" class="date-search" placeholder="Fecha inicio">
+                    <input type="search" class="date-search" placeholder="Fecha fin">
+                </div>
+    
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Curso</th>
+                        <th>Grupo</th>
+                        <th>Veces idas al baño</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lucía</td>
+                        <td>García González</td>
+                        <td>1 ESO</td>
+                        <td>A</td>
+                        <td>?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Días</th>
+                        <th>Horas</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>?</td>
+                        <td>?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+        <!--Tabla 3: Hace referencia a la lista de alumnos con el número de veces que han ido al baño-->
+
+        <div class="table-title">
+            <h2>Listado de alumnos</h2>
+        </div>
+
+        <div class="table-record-03">
+
+            <div class="configuration-header">
+
+                <div class="date">
+                    <span>Periodo</span>
+                    <input type="search" class="date-search" placeholder="Fecha inicio">
+                    <input type="search" class="date-search" placeholder="Fecha fin">
+                </div>
+    
+            </div>
+
+            <table>
+
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellidos</th>
+                        <th>Curso</th>
+                        <th>Grupo</th>
+                        <th>Veces idas al baño</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lucía</td>
+                        <td>García González</td>
+                        <td>1 ESO</td>
+                        <td>A</td>
+                        <td>?</td>
+                    </tr>
+
+                    <tr>
+                        <td>Pablo</td>
+                        <td>Motos Burgos</td>
+                        <td>2 ESO</td>
+                        <td>B</td>
+                        <td>?</td>
+                    </tr>
+
+                    <tr>
+                        <td>María</td>
+                        <td>López González</td>
+                        <td>4 ESO</td>
+                        <td>C</td>
+                        <td>?</td>
+                    </tr>
+                </tbody>
+
+            </table>
+
+        </div>
+
+    </body>
+
+</html>
