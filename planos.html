@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="css/map-style.css">
 <link rel="stylesheet" href="css/navbar.css">
 
-
+<style> </style>
 
 </head>
 
@@ -37,6 +37,7 @@
 
     <div id="panel">
         <div id="panel-selector">
+            <!-- este formulario es un placeholder. Va alimentado por un endpoint que le dice que cursos existen en el sistema-->
             <form action="">
                 <label for="selector-curso">Localizador de cursos:</label>
                 <select name="selector-curso">
@@ -56,20 +57,35 @@
             </form>
         </div>
 
-        <div id="info-box-mapa">
+        <div id="contenedor-info-box-endpoints">
             <p><strong>Profesor:</strong> Vicente Serrano.</p>
             <p><strong>Asignatura/modulo:</strong> Sisetmas informaticos.</p>
             <p><strong>Curso:</strong> 1º DAM</p>
         </div>
-        <div>
+        <div id="contenedor-botones-rotacion">
             <p><strong>Mostrar planta:</strong></p>
             <button id="boton-planta-baja">Planta baja</button>
             <button id="boton-planta-primera">Planta primera</button>
             <button id="boton-planta-segunda">Planta segunda</button>
             <div id="indicador">Rotacion: Desactivada</div>
-            <button id="boton-autorotacion">Activar rotacion</button>
+            <button id="boton-autorotacion">3s</button>
+            <button id="rotacion-5">5s</button>
+            <button id="rotacion-10">10s</button>
+            <button id="rotacion-15">15s</button>
+            <button id="rotacion-20">20s</button>
+            <button id="rotacion-30">30s</button>
             
 
+        </div>
+        <div id="contenedor-botones-dimensiones">
+            <p>Configurar tamaño del plano:</p>
+            <a href="planos.html"><button>Reestablecer</button></a>
+            <button id="mapa-tamano-1">662px * 936px</button>
+            <button id="mapa-tamano-2">777px * 1100px</button>
+            <button id="mapa-tamano-3">827px * 1170px</button>     
+            <button id="mapa-tamano-4">910px * 1287px</button>
+            <button id="mapa-tamano-5">992px * 1404px</button>
+            <button id="mapa-tamano-6">1984px * 2808px</button>        
         </div>
 
 
