@@ -1,21 +1,60 @@
 <html>
     <head>
-
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/Seccion_administracion.css">
+        <link rel="stylesheet" href="css/navbar.css">
     </head>
     <body>
-        <header>
-
-        </header>
+        <header class="header">
+            <div class="logo-header">
+                <a href=""><img src="img/logo.jpg" alt="logo"></a>
+            </div>
+            <div class="nav-menu">
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menu-icon"><img src="img/menuhamburguesa.svg" alt="menu"></i>
+                </label>
+                <ul>
+                    <li><a href="#link1">Administración</a></li>
+                    <li><a href="#link2">Profesores</a></li>
+                    <li><a href="#link3">Alumnos</a></li>
+                    <li><a href="#link4">Horarios</a></li>
+                    <li><a href="#link5">Convivencia</a></li>
+                    <li><a href="#link6">Mapas</a></li>
+                </ul>
+            </div>
+        </header> 
         <div>
             <!-- Fondo de la pagina -->
-            <div>
+            <div id="inputs">
                 <!-- Formulario -->
-                
+                <section>
+                <input type="file" placeholder="Configuración..." accept=".xml">
+                <br>
+                <button>Cargar</button>
+                <span><----Aquí se carga la configuración en xml.</span>
+                </section>
+                <section>
+                <input type="file" placeholder="Roles..." accept=".csv">
+                <br>
+                <button>Cargar</button>
+                <span><----Aquí se cargan los roles en csv.</span>
+                </section>
+                <section>
+                <input type="file" placeholder="Alumnos..." accept=".xml">
+                <br>
+                <button>Cargar</button>
+                <span><----Aquí se cargan los alumnos en xml.</span>
+                </section>
             </div>
+
             <br>
-            <div>
+            <div id="cuadrado">
                 <!-- Cuadrado de excel -->
+                <embed type="text/csv" src="img/Informe MER - Hoja 1.csv" width="1000px" height="1000px">
             </div>
+            
         </div>
     </body>
     <footer>

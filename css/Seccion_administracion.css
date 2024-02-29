@@ -1,0 +1,22 @@
+#inputs section{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 1%;
+}
+span {
+    display: none;
+}
+#inputs section button{
+   margin-left: 3%;
+}
+
+section:hover span{
+    display: block;
+ }
+
+#cuadrado{
+    display: flex;
+    justify-content: center;
+    
+}
