@@ -2,7 +2,6 @@
     padding:0;
     margin:0;
     font-size: 16px;
-    border: 1px solid black;
 }
 
 :root{
@@ -37,24 +36,36 @@
 
 }
 
+#rotacionActiva{
+    font-weight: bold;
+    color: green;
+}
+
+#rotacionNoActiva{
+    font-weight: bold;
+    color: red;
+}
+
+
+
+
 #panel{
-    width: 25%;
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 20%;
     height: 913px;
-    background-color: red;
+    background-color: rgb(215, 244, 253);
     float: left;
 }
 
 .contenedor{
     width: 74%;
     height: 913px;
-    background-color: cyan;
-    overflow: scroll;
+    background-color: rgb(255, 249, 169);
     float: left;
 }
 
 .caja-mapa{
-    margin-left: auto;
-    margin-right: auto;
     background-color: rgb(255, 136, 0);
     height: var( --map-height );
     width: var( --map-width );
@@ -70,37 +81,45 @@
     background-repeat: no-repeat;
 }/*/
 
-.planta-baja{
+#planta-baja{
     background-image: url(../img/planos/Planta-baja.png);
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    display: block;
 }
 
-.planta-primera{
-    background-image: url(../img/planos/Planta-primera.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.planta-segunda{
-    background-image: url(../img/planos/Planta-segunda.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-.target{
+#planta-segunda>* , #planta-primera>div , #planta-baja>* {
     position: absolute;
     background-color: rgba(255, 255, 0, 0.26);
     border: 1px solid rgb(0, 0, 0);
 }
 
-.target:hover{
+#planta-segunda>*:hover , #planta-primera>*:hover , #planta-baja>*:hover {
     position: absolute;
     background-color: rgba(28, 46, 146, 0.5);
     border: 1px solid gray;
+}
+
+#planta-primera{
+    background-image: url(../img/planos/Planta-primera.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: none;
+}
+
+#planta-segunda{
+    background-image: url(../img/planos/Planta-segunda.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    display: none;
+}
+
+
+.target:hover{
+
 }
 
 /*ELEMENTOS AULAS PLANTA BAJA*/

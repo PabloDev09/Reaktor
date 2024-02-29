@@ -4,73 +4,134 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Planos del centro</title>
+<title>Planos del centro - Reaktor</title>
 <link rel="stylesheet" href="css/map-style.css">
+<link rel="stylesheet" href="css/navbar.css">
+
+
+
 </head>
 
 <body>
-    <div id="panel"> Panel informativo</div>
+    <header class="header">
+
+        <div class="logo-header">
+            <a href=""><img src="img/logo.jpg" alt="logo"></a>
+        </div>
+
+        <div class="nav-menu">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="menu-icon"><img src="img/menuhamburguesa.svg" alt="menu"></i>
+            </label>
+            <ul>
+                <li><a href="#link1">Administración</a></li>
+                <li><a href="#link2">Profesores</a></li>
+                <li><a href="#link3">Alumnos</a></li>
+                <li><a href="#link4">Horarios</a></li>
+                <li><a href="#link5">Convivencia</a></li>
+                <li><a href="planos.html">Mapas</a></li>
+            </ul>
+        </div>
+   </header> 
+
+    <div id="panel">
+        <div id="panel-selector">
+            <form action="">
+                <label for="selector-curso">Localizador de cursos:</label>
+                <select name="selector-curso">
+                    <option value="ejemploa">1º DAM</option>
+                    <option value="ejemplob">2º DAM</option>
+                    <option value="ejemploa">1º DAW</option>
+                    <option value="ejemplob">2º DAW</option>
+                    <option value="ejemploa">1º ESO A</option>
+                    <option value="ejemploa">2º ESO A</option>
+                    <option value="ejemploa">3º ESO A</option>
+                    <option value="ejemploa">4º ESO A</option>
+                    <option value="ejemploa">1º ESO B</option>
+                    <option value="ejemploa">2º ESO B</option>
+                    <option value="ejemploa">3º ESO B</option>
+                    <option value="ejemploa">4º ESO B</option>
+                </select>
+            </form>
+        </div>
+
+        <div id="info-box-mapa">
+            <p><strong>Profesor:</strong> Vicente Serrano.</p>
+            <p><strong>Asignatura/modulo:</strong> Sisetmas informaticos.</p>
+            <p><strong>Curso:</strong> 1º DAM</p>
+        </div>
+        <div>
+            <p><strong>Mostrar planta:</strong></p>
+            <button id="boton-planta-baja">Planta baja</button>
+            <button id="boton-planta-primera">Planta primera</button>
+            <button id="boton-planta-segunda">Planta segunda</button>
+            <div id="indicador">Rotacion: Desactivada</div>
+            <button id="boton-autorotacion">Activar rotacion</button>
+        </div>
+
+    </div>
     <div class="contenedor">       
             <!-- <div class="planta-baja-terrenos"></div> -->
         
-            <div class="planta-baja caja-mapa">
-                <div class="target" id="aula-2ndo-Guia"></div>
-                <div class="target" id="aula-1ero-Guia-A"></div>
-                <div class="target" id="aula-1ero-Guia-B"></div>
-                <div class="target" id="gimnasio"></div>
-                <div class="target" id="pista-padel"></div>
-                <div class="target" id="aula0-11"></div>
-                <div class="target" id="aula0-9"></div>
-                <div class="target" id="aula0-5"></div>
-                <div class="target" id="aula0-7"></div>
-                <div class="target" id="aula0-3"></div>
-                <div class="target" id="aula0-1"></div>
-                <div class="target" id="aula0-2-sur"></div>
-                <div class="target" id="aula0-2-norte"></div>
-                <div class="target" id="aula0-"></div>
-            </div>   
+            <div id="planta-baja" class=" caja-mapa">
+                <div id="aula-2ndo-Guia"></div>
+                <div id="aula-1ero-Guia-A"></div>
+                <div id="aula-1ero-Guia-B"></div>
+                <div id="gimnasio"></div>
+                <div id="pista-padel"></div>
+                <div id="aula0-11"></div>
+                <div id="aula0-9"></div>
+                <div id="aula0-5"></div>
+                <div id="aula0-7"></div>
+                <div id="aula0-3"></div>
+                <div id="aula0-1"></div>
+                <div id="aula0-2-sur"></div>
+                <div id="aula0-2-norte"></div>
+                <div id="aula0-"></div>
+            </div> 
 
-            <div class="planta-primera caja-mapa">
-                <div class="target" id="aula1-11"></div>
-                <div class="target" id="aula1-9"></div>
-                <div class="target" id="aula1-13"></div>
-                <div class="target" id="aula1-7"></div>
-                <div class="target" id="aula1-15"></div>
-                <div class="target" id="aula1-5"></div>
-                <div class="target" id="aula1-17"></div>
-                <div class="target" id="aula1-3"></div>
-                <div class="target" id="aula1-19"></div>
-                <div class="target" id="aula1-1"></div>
-                <div class="target" id="aula1-2"></div>
-                <div class="target" id="aula1-12"></div>
-                <div class="target" id="aula1-4"></div>
-                <div class="target" id="aula1-10"></div>
-                <div class="target" id="aula1-6"></div>
-                <div class="target" id="aula1-8"></div>
+            <div id="planta-primera" class="caja-mapa">
+                <div id="aula1-11"></div>
+                <div id="aula1-9"></div>
+                <div id="aula1-13"></div>
+                <div id="aula1-7"></div>
+                <div id="aula1-15"></div>
+                <div id="aula1-5"></div>
+                <div id="aula1-17"></div>
+                <div id="aula1-3"></div>
+                <div id="aula1-19"></div>
+                <div id="aula1-1"></div>
+                <div id="aula1-2"></div>
+                <div id="aula1-12"></div>
+                <div id="aula1-4"></div>
+                <div id="aula1-10"></div>
+                <div id="aula1-6"></div>
+                <div id="aula1-8"></div>
             </div>
 
-            <div class="planta-segunda caja-mapa">
-                <div class="target" id="aula2-11"></div>
-                <div class="target" id="aula2-13"></div>
-                <div class="target" id="aula2-9"></div>
-                <div class="target" id="aula2-15"></div>
-                <div class="target" id="aula2-7"></div>
-                <div class="target" id="aula2-17"></div>
-                <div class="target" id="aula2-5"></div>
-                <div class="target" id="aula2-19"></div>
-                <div class="target" id="aula2-3"></div>
-                <div class="target" id="aula2-21"></div>
-                <div class="target" id="aula2-23"></div>
-                <div class="target" id="aula2-1"></div>
-                <div class="target" id="aula2-2"></div>
-                <div class="target" id="aula2-12"></div>
-                <div class="target" id="aula2-4"></div>
-                <div class="target" id="aula2-10"></div>
-                <div class="target" id="aula2-6"></div>
-                <div class="target" id="aula2-8"></div>
+            <div id="planta-segunda" class=" caja-mapa">
+                <div id="aula2-11"></div>
+                <div id="aula2-13"></div>
+                <div id="aula2-9"></div>
+                <div id="aula2-15"></div>
+                <div id="aula2-7"></div>
+                <div id="aula2-17"></div>
+                <div id="aula2-5"></div>
+                <div id="aula2-19"></div>
+                <div id="aula2-3"></div>
+                <div id="aula2-21"></div>
+                <div id="aula2-23"></div>
+                <div id="aula2-1"></div>
+                <div id="aula2-2"></div>
+                <div id="aula2-12"></div>
+                <div id="aula2-4"></div>
+                <div id="aula2-10"></div>
+                <div id="aula2-6"></div>
+                <div id="aula2-8"></div>
             </div>
     </div>
-
+    <script src="js/planos.js"></script>
 </body>
 
 </html>
