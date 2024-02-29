@@ -5,9 +5,9 @@
 }
 
 :root {
-    --map-width: 50px;
-    --map-height: 50px;
-    --status-color: gray;
+    --map-width: 300px;
+    --map-height: 300px;
+    --status-color: red;
 
     /*con 2k 
     --map-width:1404px;
@@ -36,7 +36,6 @@
     /*con 768 * 1024
     --map-width:936px;
     --map-height:662px;*/
-
 }
 
 @media screen and (max-width: 4096px) {
@@ -81,7 +80,6 @@
     }
 }
 
-
 #rotacionActiva {
     font-weight: bold;
     color: var(--status-color);
@@ -92,57 +90,80 @@
     color: var(--status-color);
 }
 
-
-
 .contenedor {
     width: 74%;
-    height: 913px;
-    background-color: rgb(136, 255, 0);
     float: left;
+    background-color: rgb(243, 235, 243);
 }
 
+body{
+    background-color: rgb(243, 235, 243);
+}
 .caja-mapa {
-    background-color: rgb(255, 136, 0);
     height: var(--map-height);
     width: var(--map-width);
     border: 5px solid var(--status-color);
+    margin-top: 10px;
 }
 
 #panel {
-    padding-top: 20px;
-    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 10px;
     width: 20%;
     height: 913px;
-    background-color: rgb(215, 244, 253);
+    background-color: rgb(243, 235, 243);
     float: left;
 }
 
+#panel-selector {
+    font-weight: bold;
+    background-color: rgb(190, 224, 238);
+    padding:5px;
+    border-radius: 5px;
+    margin-top:10px;
+    display: flex;
+    justify-content: center;
+}
+
+
+#contenedor-botones-rotacion {
+    background-color: rgb(221, 245, 255);
+    border-radius: 5px;
+    margin-top:10px;
+    padding:10px;
+}
+
 #contenedor-botones-dimensiones {
+    background-color: rgb(190, 224, 238);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    background-color: cyan;
-}
-
-#contenedor-botones-rotacion {
-    background-color: orange;
+    margin-top:10px;
+    padding:10px;
 }
 
 #contenedor-info-box-endpoints {
-    background-color: rgb(149, 149, 255);
+    background-color: rgb(221, 245, 255);
+    margin-top:10px;
+    height: 100%;
+    padding:10px;
 }
 
-#panel-selector {
-    background-color: yellow;
+#selector-curso{
+    padding: 3px;
+    margin-left: 10px;
+    border-radius: 5px;
 }
 
 button {
     cursor: pointer;
     color: rgb(0, 0, 0);
-    background-color: rgb(184, 255, 246);
+    background-color: rgb(197, 248, 241);
     transition: 0.2s;
     margin: 5px 0px;
-    padding: 3px;
+    padding: 5px;
     border-radius: 5px;
     font-weight: bold;
     border: 1px solid black;

@@ -21,8 +21,6 @@ const botonDimension4 = document.getElementById("mapa-tamano-4");
 const botonDimension5 = document.getElementById("mapa-tamano-5");
 const botonDimension6 = document.getElementById("mapa-tamano-6");
 
-
-
 const root = document.querySelector(':root');
 
 function redimensiona(alto, ancho,botonpulsado){
@@ -71,7 +69,6 @@ function auxiliarCompacta(lapso, segundos, botonpulsado){
     reseteaEstadoBoton(botonLapso30);
 
     botonpulsado.classList.add("boton-active");
-
 }
 
 function reseteaEstadoBoton(elemento){
@@ -150,7 +147,6 @@ function boton2funcAux () {
 
   function actualizaEstadoRotacion(){ root.style.setProperty('--status-color','red'); };
 
-
 boton0.onclick = function() {
     boton0funcAux(); actualizaEstadoRotacion();
     reseteaEstadoBoton(boton1);
@@ -191,34 +187,30 @@ boton2.onclick = function() {
     reseteaEstadoBoton(botonLapso30); 
 };
 
-
-
 let planta=0;
 function cambioPlanta(isActive){
 
-    
-        if (rotacion) {
-            if (planta == 0){
-                planta = 1
-            }
-            else if (planta == 1){
-                planta = 2
-            }
-            else if (planta == 2){
-                planta = 0
-            }
-
-            if (planta == 0){
-                boton0func();
-            }
-            else if (planta == 1){
-                boton1func();
-            }
-            else if (planta == 2){
-                boton2func();
-            }
+    if (rotacion) {
+        if (planta == 0){
+            planta = 1
         }
-    
+        else if (planta == 1){
+            planta = 2
+        }
+        else if (planta == 2){
+            planta = 0
+        }
+        if (planta == 0){
+            boton0func();
+        }
+        else if (planta == 1){
+            boton1func();
+        }
+        else if (planta == 2){
+            boton2func();
+        }
+    }
+
 }
 
 function RotacionAuxiliar (valorlapso) {
