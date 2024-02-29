@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     padding: 0;
     margin: 0;
@@ -37,6 +39,25 @@
     --map-width:936px;
     --map-height:662px;*/
 }
+
+@keyframes enfasis {
+    from {
+        background-color: rgba(255, 0, 0, 0);
+        border: 3px solid black;
+    }
+    to {
+        background-color: rgb(218, 120, 29);
+        border: 3px solid black;
+    }
+  }
+
+.enfasis-aula{
+    animation-name: enfasis;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 
 @media screen and (max-width: 4096px) {
     :root {
@@ -98,6 +119,7 @@
 
 body{
     background-color: rgb(243, 235, 243);
+    font-family: 'Open Sans';
 }
 .caja-mapa {
     height: var(--map-height);
@@ -105,80 +127,121 @@ body{
     border: 5px solid var(--status-color);
     margin-top: 10px;
 }
-
+/*Panel contenedor de los modulos de la izquierda.*/
 #panel {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding: 10px;
-    width: 20%;
     height: 913px;
     background-color: rgb(243, 235, 243);
     float: left;
 }
+/*Aplica las reglas a todos los hijos del panel lateral izquierdo*/
+#panel>*{
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: rgb(255, 255, 255);
+    padding:10px;
+    margin: 5px;
+    display: fle;
+}
+
+.titulo-djg{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
 
 #panel-selector {
     font-weight: bold;
-    background-color: rgb(190, 224, 238);
-    padding:5px;
-    border-radius: 5px;
-    margin-top:10px;
     display: flex;
     justify-content: center;
 }
 
-
-#contenedor-botones-rotacion {
-    background-color: rgb(221, 245, 255);
-    border-radius: 5px;
-    margin-top:10px;
-    padding:10px;
-}
-
 #contenedor-botones-dimensiones {
-    background-color: rgb(190, 224, 238);
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     align-items: flex-start;
     margin-top:10px;
-    padding:10px;
+}
+
+#contenedor-columnas-dimensiones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+}
+
+.columna-dimensiones{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#selector-dimensiones{
+    padding:3px;
+    border-radius: 5px;
 }
 
 #contenedor-info-box-endpoints {
-    background-color: rgb(221, 245, 255);
     margin-top:10px;
     height: 100%;
-    padding:10px;
+    background-color: rgb(230, 248, 253);
 }
 
 #selector-curso{
     padding: 3px;
     margin-left: 10px;
     border-radius: 5px;
+    background-color: rgb(238, 243, 242);
 }
 
 button {
     cursor: pointer;
     color: rgb(0, 0, 0);
-    background-color: rgb(197, 248, 241);
+    background-color: rgb(238, 243, 242);
     transition: 0.2s;
-    margin: 5px 0px;
-    padding: 5px;
     border-radius: 5px;
-    font-weight: bold;
     border: 1px solid black;
+    margin: 5px;
+    padding: 3px;
+}
+
+#contenedor-botones-rotacion button{
+    /*Para diseño interactivo*/
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+#contenedor-botones-rotacion button.boton-active {
+    color: rgb(255, 255, 255);
+    background-color:  rgb(31, 155, 203);
+    transition: 0.2s;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 .boton-active {
     color: rgb(255, 255, 255);
-    background-color: rgb(74, 164, 187);
+    background-color:  rgb(31, 155, 203);
     transition: 0.2s;
 }
 
 .boton-active-temp {
     color: rgb(20, 5, 238);
-    background-color: rgb(244, 255, 92);
-    transition: 0.2s;
+    background-color: rgb(243, 250, 147);
+    transition: 0.3s;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
 }
 
 /*Propiedades comunes a todas las plantas*/
@@ -203,13 +266,15 @@ button {
     display: none; /*Necesario individual por planta para el script JS*/
 }
 
-.target {
+/*Selecciona todos los divs de AULA dentro de cada planta.*/
+ #planta-baja>* , #planta-primera>* , #planta-segunda>* {
     position: absolute;
     background-color: rgba(255, 255, 0, 0.26);
     border: 1px solid rgb(0, 0, 0);
-}
+ }
 
-.target:hover {
+/*Atiende al HOVER de todos los divs AULA dentro de cada planta.*/
+ #planta-baja>*:hover, #planta-primera>*:hover, #planta-segunda:hover>*:hover {
     background-color: rgba(28, 46, 146, 0.5);
     border: 1px solid gray;
 }
