@@ -5,7 +5,7 @@
         <link rel="stylesheet" href="css/Seccion_administracion.css">
         <link rel="stylesheet" href="css/navbar.css">
     </head>
-    <body>
+    <body class="fondo">
         <header class="header">
             <div class="logo-header">
                 <a href=""><img src="img/logo.jpg" alt="logo"></a>
@@ -16,46 +16,45 @@
                     <i class="menu-icon"><img src="img/menuhamburguesa.svg" alt="menu"></i>
                 </label>
                 <ul>
-                    <li><a href="#link1">Administración</a></li>
+                    <li><a href="Seccion_administracion.html">Administración</a></li>
                     <li><a href="#link2">Profesores</a></li>
                     <li><a href="#link3">Alumnos</a></li>
-                    <li><a href="#link4">Horarios</a></li>
+                    <li><a href="ConsultaHorarios.html">Horarios</a></li>
                     <li><a href="#link5">Convivencia</a></li>
-                    <li><a href="#link6">Mapas</a></li>
+                    <li><a href="planos.html">Mapas</a></li>
                 </ul>
             </div>
         </header> 
-        <div>
             <!-- Fondo de la pagina -->
-            <div id="inputs">
+            <div class="fondo_cuadrado">
                 <!-- Formulario -->
-                <section>
-                <input type="file" placeholder="Configuración..." accept=".xml">
-                <br>
-                <button>Cargar</button>
-                <span><----Aquí se carga la configuración en xml.</span>
+                <section class="seccion1">
+                    <label  for="Configuración en xml">Cargar configuración en xml:</label>
+                    <div class="marco_interno">
+                        <input type="file" placeholder="Configuración..." accept=".xml">
+                    </div>
+                    <input type="submit" value="Cargar" id="alinear">
                 </section>
-                <section>
-                <input type="file" placeholder="Roles..." accept=".csv">
-                <br>
-                <button>Cargar</button>
-                <span><----Aquí se cargan los roles en csv.</span>
+                <section class="seccion1">
+                    <label  for="Roles csv">Cargar roles en csv:</label>
+                    <div class="marco_interno">
+                        <input  type="file" placeholder="Roles..." accept=".csv">
+                    </div>
+                    <input type="submit" value="Cargar" id="alinear">
                 </section>
-                <section>
-                <input type="file" placeholder="Alumnos..." accept=".xml">
-                <br>
-                <button>Cargar</button>
-                <span><----Aquí se cargan los alumnos en xml.</span>
+                <section class="seccion1">
+                    <label for="Alumnos en xml">Cargar alumnos en xml:</label>
+                    <div class="marco_interno">
+                        <input type="file" placeholder="Alumnos..." accept=".xml">
+                    </div>
+                    <input type="submit" value="Cargar" id="alinear">
                 </section>
             </div>
-
             <br>
-            <div id="cuadrado">
+            <div id="cuadrado" class="fondo_cuadrado">
                 <!-- Cuadrado de excel -->
-                <embed type="text/csv" src="img/Informe MER - Hoja 1.csv" width="1000px" height="1000px">
+                <embed type="text/csv" src="img/Informe MER - Hoja 1.csv" width="1000px" height="1000px" style="margin-top: 2%;">
             </div>
-            
-        </div>
     </body>
     <footer>
 
