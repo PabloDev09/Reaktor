@@ -118,12 +118,10 @@ body{
     color: var(--status-color);
 }
 
-.contenedor {
-    width: 74%;
-    float: left;
-    background-color: rgb(243, 235, 243);
+#contenedor-botones-plantas{
+    display:flex;
+    flex-direction: row;
 }
-
 
 .caja-mapa {
     height: var(--map-height);
@@ -139,7 +137,7 @@ body{
     padding: 10px;
     height: 913px;
     background-color: rgb(243, 235, 243);
-    float: left;
+    max-width: 15%;
 }
 /*Aplica las reglas a todos los hijos del panel lateral izquierdo*/
 #panel>*{
@@ -162,8 +160,13 @@ body{
     justify-content: center;
 }
 
-#contenedor-botones-dimensiones {
+#djg-main-box{
     display: flex;
+    flex-direction: row;
+}
+
+#contenedor-botones-dimensiones {
+    display: none;
     flex-direction: column;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -184,8 +187,9 @@ body{
 }
 
 #selector-dimensiones{
-    padding:3px;
     border-radius: 5px;
+    margin: 5px;
+    padding: 3px;
 }
 
 #contenedor-info-box-endpoints {
@@ -196,7 +200,7 @@ body{
 
 #selector-curso{
     padding: 3px;
-    margin-left: 10px;
+    margin-top: 5px;
     border-radius: 5px;
     background-color: rgb(238, 243, 242);
 }
@@ -242,9 +246,10 @@ button {
     transition: 0.2s;
 }
 
+
 #restablecer:hover{
     color: rgb(0, 0, 0);
-    background-color:  rgb(255, 197, 121);
+    background-color:  rgb(252, 218, 174);
 }
 
 .boton-active {
