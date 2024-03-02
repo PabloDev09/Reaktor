@@ -36,7 +36,7 @@ a, li{
     border-radius: 0.2rem;        
 }
 
-.nav-menu a:hover{
+.nav-menu a{
     color: black;
 }
 
