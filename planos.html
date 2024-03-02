@@ -46,14 +46,14 @@
                 <label for="selector-curso">Localizador de cursos:</label>
                 <select name="selector-curso" id="selector-curso">
                     <option value="0">Seleccionar</option>
-                    <option value="1">1º FPB</option>
-                    <option value="2">2º FPB</option>
-                    <option value="3">1º DAM</option>
-                    <option value="4">2º DAM</option>
-                    <option value="5">3º DIVER </option>
-                    <option value="6">4º DIVER </option>
-                    <option value="7">Aula de Plástica </option>
-                    <option value="8">1º BCS-A </option>
+                    <option value="aula01">1º FPB</option>
+                    <option value="aula03">2º FPB</option>
+                    <option value="aula05">1º DAM</option>
+                    <option value="aula07">2º DAM</option>
+                    <option value="aula02no">3º DIVER </option>
+                    <option value="aula02su">4º DIVER </option>
+                    <option value="aula09">Aula de Plástica </option>
+                    <option value="aula011">1º BCS-A </option>
                 </select>           
             </form>
         </div>
@@ -62,7 +62,7 @@
         <div id="contenedor-botones-rotacion">
 
             <p class="titulo-djg" >Mostrar planta.</p>
-
+            <center>
             <!-- Botones de selección manual de planta -->
             <button id="boton-planta-baja">Planta baja</button>
             <button id="boton-planta-primera">Planta primera</button>
@@ -72,12 +72,12 @@
             <div id="indicador">Rotacion: Desactivada</div>
 
             <!-- Botones de rotacion automatica -->
-            <button id="boton-autorotacion">3s</button>
-            <button id="rotacion-5">5s</button>
+            <button id="boton-autorotacion">03s</button>
+            <button id="rotacion-5">05s</button>
             <button id="rotacion-10">10s</button>
             <button id="rotacion-15">15s</button>
             <button id="rotacion-20">20s</button>
-            <button id="rotacion-30">30s</button>
+            <button id="rotacion-30">30s</button></center>
         </div>
         <!-- FINAL  Botones para seleccion de planta y rotacion automatica  -->
 
@@ -119,13 +119,11 @@
         <!-- INICIO  Caja donde se deberá renderizar la información recuperada mediante los endpoints y back-end -->
         <div id="contenedor-info-box-endpoints">
            <p class="titulo-djg">Información del aula.</p>
-            <p><strong>Información:</strong> Valor</p>
-            <p><strong>Información:</strong> Valor</p>
-            <p><strong>Información:</strong> Valor</p>
-            <p><strong>Información:</strong> Valor</p>
-            <p><strong>Información:</strong> Valor</p>
-            <p><strong>Información:</strong> Valor</p>
-            <p><strong>Información:</strong> Valor</p>
+            <p><strong>Curso:</strong></p><p> <span> Valor a rellenar mediante query </span> </p>
+            <p><strong>Tutor:</strong></p><p>  <span> Valor a rellenar mediante query </span> </p>
+            <p><strong>Docente actual:</strong></p><p>  <span> Valor a rellenar mediante query </span> </p>
+            <p><strong>Asignatura / módulo actual:</strong></p><p>  <span> Valor a rellenar mediante query </span> </p>
+            <p><strong>Cantidad de alumnos:</strong></p><p>  <span> Valor a rellenar mediante query </span> </p>
         </div>
         <!-- FIN  Caja donde se deberá renderizar la información recuperada mediante los endpoints y back-end -->
 

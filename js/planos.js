@@ -259,26 +259,28 @@ function RotacionAuxiliar (valorlapso) {
 /*Guardamos el elemento a escuchar en una variable */
 const selectorCursos = document.querySelector('#selector-curso');
 
-const aula01 = document.getElementById("aula0-1");
-const aula02no = document.getElementById("aula0-2-norte");
-const aula02su = document.getElementById("aula0-2-sur");
-const aula03 = document.getElementById("aula0-3");
-const aula05 = document.getElementById("aula0-5");
-const aula07 = document.getElementById("aula0-7");
-const aula09 = document.getElementById("aula0-9");
-const aula011 = document.getElementById("aula0-11");
+/*Declaración de aulas en variables para el array de aulas*/
+const aula01 = document.getElementById("aula0-1"); /*1º fpb*/
+const aula02no = document.getElementById("aula0-2-norte");/* 3º diver*/
+const aula02su = document.getElementById("aula0-2-sur");/* 4º diver*/
+const aula03 = document.getElementById("aula0-3");/* 2º fpb*/
+const aula05 = document.getElementById("aula0-5");/* 1º dam*/
+const aula07 = document.getElementById("aula0-7");/* 2º dam*/
+const aula09 = document.getElementById("aula0-9");/* plastica*/
+const aula011 = document.getElementById("aula0-11");/* 1º bcs*/
 
-/* Funcion que quita la clase de enfasis al elemento */
+
+/*Array de aulas*/
+/* Este array se usa en el bucle for para el limpiado del estado de enfasis*/
+const aulasArray = [aula01, aula02no, aula02su, aula03, aula05, aula07, aula09, aula011];
+
+/* Funcion que quita la clase de enfasis a los elementos en aulasArray*/
 function reseteaEnfasisAulas(){
-    aula01.classList.remove('enfasis-aula');
-    aula02no.classList.remove("enfasis-aula");
-    aula02su.classList.remove("enfasis-aula");
-    aula03.classList.remove("enfasis-aula");
-    aula05.classList.remove("enfasis-aula");
-    aula07.classList.remove("enfasis-aula");
-    aula09.classList.remove("enfasis-aula");
-    aula011.classList.remove("enfasis-aula");
+    for (let aulaIndice = 0; aulaIndice < aulasArray.length; aulaIndice++  ) {
+        aulasArray[aulaIndice].classList.remove('enfasis-aula');
+    }
 }
+
 function enfatiza(aula){
     aula.classList.add("enfasis-aula");
 }
@@ -286,74 +288,60 @@ function enfatiza(aula){
 /* Le asignamos una escucha que llame una funcion*/
 selectorCursos.addEventListener("change", function() {
 
-    /* La funcion ejemplo tiene una logica de ifs que seguramente podreis mejorar con lo que sabeis que es mas que nosotros */
+    /*Esto elimina el enfasis anteriormente aplicado, si lo hubiere*/
+    reseteaEnfasisAulas();
+
+    /* La funcion ejemplo tiene una logica de ifs que seguramente podreis mejorar con lo que sabeis que es mas que nosotros en 1º
+    pero si os peude servir de algo aquí la teneis. */
 
     /* Opcion para deseleccionar aulas */
     if (this.value === "0") {
-
-        /* resetea el enfasis de las aulas antes de aplicar el nuevo enfasis */
-        reseteaEnfasisAulas();
+        /*La opción 0 no hace nada, es un placeholder para sencillamente resetear el estado del enfasis*/
     }
 
     /*1º FPB*/
-    else if (this.value === "1") {
-        /* resetea el enfasis de las aulas antes de aplicar el nuevo enfasis */
-        reseteaEnfasisAulas();
+    else if (this.value === "aula01") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula01);
     }
     /*2º FPB*/
-    else if (this.value === "2") {
-        /* resetea el enfasis de las aulas antes de aplicar el nuevo enfasis */
-        reseteaEnfasisAulas();
+    else if (this.value === "aula03") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula03);
     }
 
     /*1º DAM*/
-    else if (this.value === "3") {
-        /* resetea el enfasis de las aulas antes de aplicar el nuevo enfasis */
-        reseteaEnfasisAulas();
+    else if (this.value === "aula05") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula05);
     }
 
     /*2º DAM*/
-    else if (this.value === "4") {
-        /* resetea el enfasis de las aulas antes de aplicar el nuevo enfasis */
-        reseteaEnfasisAulas();
+    else if (this.value === "aula07") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula07);
     }
 
     /*3º DIVER*/
-    else if (this.value === "5") {
-        /* resetea el enfasis de las aulas antes de aplicar el nuevo enfasis */
-        reseteaEnfasisAulas();
+    else if (this.value === "aula02no") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula02no);
     }
 
     /*4º DIVER*/
-    else if (this.value === "6") {
-        /* resetea el enfasis de las aulas antes de aplicar el nuevo enfasis */
-        reseteaEnfasisAulas();
+    else if (this.value === "aula02su") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula02su);
     }
 
     /*Aula de plastica*/
-    else if (this.value === "7") {
-        /* resetea el enfasis de las aulas antes de aplicar el nuevo enfasis */
-        reseteaEnfasisAulas();
+    else if (this.value === "aula09") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula09);
     }
 
     /*1º BCS A*/
-    else if (this.value === "8") {
-    /* resetea el enfasis de las aulas antes de aplicar el nuevo enfasis */
-    reseteaEnfasisAulas();
+    else if (this.value === "aula011") {
     /* Marcamos el elemento html correspondiente */
     enfatiza(aula011);
     }

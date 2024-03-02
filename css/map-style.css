@@ -6,6 +6,11 @@
     font-size: 16px;
 }
 
+body{
+    background-color: rgb(243, 235, 243);
+    font-family: 'Open Sans';
+}
+
 :root {
     --map-width: 300px;
     --map-height: 300px;
@@ -51,6 +56,8 @@
     }
   }
 
+/*Esta clase es para enfatizar las aulas
+ mediante la función de "Localizador curso */
 .enfasis-aula{
     animation-name: enfasis;
     animation-duration: 0.33s;
@@ -117,10 +124,7 @@
     background-color: rgb(243, 235, 243);
 }
 
-body{
-    background-color: rgb(243, 235, 243);
-    font-family: 'Open Sans';
-}
+
 .caja-mapa {
     height: var(--map-height);
     width: var(--map-width);
@@ -186,7 +190,7 @@ body{
 
 #contenedor-info-box-endpoints {
     margin-top:10px;
-    height: 100%;
+    height: auto;
     background-color: rgb(230, 248, 253);
 }
 
@@ -218,7 +222,8 @@ button {
     margin-bottom: 8px;
 }
 
-#contenedor-botones-rotacion button.boton-active {
+#contenedor-botones-rotacion button.boton-active,
+#contenedor-botones-dimensiones button.boton-active {
     color: rgb(255, 255, 255);
     background-color:  rgb(31, 155, 203);
     transition: 0.2s;
@@ -226,6 +231,20 @@ button {
     padding-bottom: 8px !important;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
+}
+
+
+
+#contenedor-botones-rotacion button:hover,
+.columna-dimensiones button:hover {
+    color: rgb(0, 0, 0);
+    background-color:  rgb(253, 255, 121);
+    transition: 0.2s;
+}
+
+#restablecer:hover{
+    color: rgb(0, 0, 0);
+    background-color:  rgb(255, 197, 121);
 }
 
 .boton-active {
@@ -235,13 +254,14 @@ button {
 }
 
 .boton-active-temp {
-    color: rgb(20, 5, 238);
-    background-color: rgb(243, 250, 147);
+    color: rgb(0, 26, 255);
+    background-color:  rgb(253, 255, 121);
     transition: 0.3s;
     padding-top: 8px !important;
     padding-bottom: 8px !important;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
+    text-shadow: 1px 1px 1px blue;
 }
 
 /*Propiedades comunes a todas las plantas*/
