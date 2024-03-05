@@ -28,4 +28,16 @@ button{
 .botones{
     display: flex;
     justify-content: center;
+    justify-content: space-around;
+}
+
+.table-record-01{
+    max-width: 900px;
+    border: 1px solid green;
+    background-color: beige;
+    padding: 15px;
+    overflow: auto;
+    margin: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
 }
