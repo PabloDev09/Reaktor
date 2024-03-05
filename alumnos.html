@@ -8,40 +8,53 @@
 </head>
 <body>
     <main>
-            <div class="end-point15">
-                <form>
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" id="Nombre" name="Nombre" />
+        <div class="seccion-info-alumno">
+            <form action="">
+                <label for="selector-curso">Cursos:</label>
+                <select name="selector-curso" id="selector-curso">
+                    <option value="0">Seleccionar</option>
+                    <option value="aula01">1º FPB</option>
+                    <option value="aula03">2º FPB</option>
+                    <option value="aula05">1º DAM</option>
+                    <option value="aula07">2º DAM</option>
+                    <option value="aula02no">3º DIVER </option>
+                    <option value="aula02su">4º DIVER </option>
+                    <option value="aula011">1º BCS-A </option>
+                </select>
+            </form>
 
-                    <label for="Apellido">Apellido:</label>
-                    <input type="text" id="Apellido" name="Apellido" />
+            <form action="">
+                <label for="selector-alumno">Alumnos:</label>
+                <select name="selector-alumno" id="selector-alumno">
+                    <option value="0">Seleccionar</option>
+                    <option value=“Alumno1”>Mayra Aguado López</option> 
+                    <option value=“Alumno2”>Rafael Alberola Robles</option> 
+                    <option value=“Alumno3”>Guillermo Alcusón Marco</option> 
+                    <option value=“Alumno4”>Francisca Alonso López</option> 
+                    <option value=“Alumno5”>Juan Álvaro Martínez-Carrasco</option> 
+                    <option value=“Alumno6”>Jaime Apariecido dos Santos</option> 
+                    <option value=“Alumno7”>Guido Arias Brenes</option> 
+                    <option value=“Alumno8”>Nekane Bariain Carrasco</option> 
+                    <option value=“Alumno9”>Jorge Barriobero Olarte</option> 
+                    <option value=“Alumno10”>Dolores Bastida López</option> 
+                    <option value=“Alumno11”>Maria E Berenguer Borja</option> 
+                    <option value=“Alumno12”>María Bernad Albiol</option> 
+                    <option value=“Alumno13”>José Manuel Blasco Boix</option> 
+                    <option value=“Alumno14”>Yanneth Bohorquez Pérez</option> 
+                    <option value=“Alumno15”>Antonio Camarasa Sanfelix</option> 
+                    <option value=“Alumno16”>Ramón Carañana Sanchís</option> 
+                    <option value=“Alumno17”>Clara Carbonell Sendra</option> 
+                    <option value=“Alumno18”>Antonio Casanova Mula</option> 
+                    <option value=“Alumno19”>Juan Félix Casas Bosca</option> 
+                    <option value=“Alumno20”>Mauricio Castillo Hidalgo</option> 
+                </select>
+            </form>
 
-                    <button onclick="alert('Curso: 1 DAM \n Numero del tutor: ******** \n Correo del tutor: ******@g.educaand.es')" type="submit">Enviar</button>
-
-                </form>
-                <p>Al pulsar el boton te devuelve el curso del alumno, el número del tutor y su correo.</p>
+            <div class="botones">
+                <button>Info Tutor</button>
+                <button>Info Tutor legal</button>
             </div>
-            <div class="end-point16">
-                <form>
-                    <label for="Nombre">Nombre:</label>
-                    <input type="text" id="Nombre" name="Nombre" />
-
-                    <label for="Apellido">Apellido:</label>
-                    <input type="text" id="Apellido" name="Apellido" />
-
-                    <label for="Curso">Curso:</label>
-                    <input type="text" id="Curso" name="Curso"/>
-
-                    <button onclick="alert('Numero del tutor: ******** \n Correo del tutor: ******@g.educaand.es')" type="submit">Enviar</button>
-
-                </form>
-                <p>Al pulsar el boton te devuelve el número del tutor y su correo.</p>
-            </div>
-
-            <div class="end-point6">
-                <button onclick="alert('Listado de los alumnos por orden alfabetico')">Todos los alumnos</button>
-                <p>Al pulsar el boton te devuelve un listado de los alumnos por orden alfabetico.</p>
-            </div>
+        </div>
     </main>
 </body>
 </html>

@@ -2,10 +2,9 @@
 body {
     margin: 0;
 }
-main{
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.seccion-info-alumno{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     margin-top: 2rem;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
@@ -26,12 +25,7 @@ button{
     margin-top: 2rem;
 }
 
-.end-point6{
-    text-align: center;
-}
-
-.end-point6, 
-.end-point15,
-.end-point16{
-    width: 25%;
+.botones{
+    display: flex;
+    justify-content: center;
 }
