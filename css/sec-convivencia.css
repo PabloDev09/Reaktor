@@ -5,7 +5,8 @@ body{
     background-color: rgb(31, 155, 203);    
     margin-top: 0%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 nav{
@@ -16,8 +17,7 @@ nav{
     color: purple;
 }
 .botonaplicar{
-    margin-top: 2%;
-    margin-left: 90%;
+    margin-top: 0%;
     max-width: min-content;
     font-size: 90%;
     font-style: italic;
@@ -25,13 +25,12 @@ nav{
     background-color: white;
 }
 
-.pdf{
+.iframe{
     display: flex;
     flex-direction: row;
     height: 100%;
     width: 100%;
     margin-top: 0%;
-    
 }
 
 .clases,
@@ -67,47 +66,20 @@ h2,li{
     color: white;
     align-items: space-around;
     border: 1%;
-    background-color: rgb(138, 138, 255);    
+      
 }
 
 html{
     background-color: rgba(48, 230, 123, 0.705);
 }
-/*configuración de ventana*/
+
 .opcion{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-start;
     background-color: skyblue;
-    
-}
-.ventana{
-    background-color:rgb(31, 155, 203);    
-    width:50%;
-    padding: 1% 2%;
-    margin: 20% auto;
-    position: relative;
-    align-items: flex-end;
-  }
-  .modal{
-    background-color: rgba(0,0,0,.8);
-    position:fixed;
-    top:-2.5%;
-    right:0;
-    bottom:0;
-    left:0;
-    opacity:0;
-    pointer-events:none;
-    transition: all 1s;
-  }
-  #IrVentanaFlotante:target{
-    opacity:1;
-    pointer-events:auto;
-  }
 
-img{
-    width: 20%;
+    
 }
 
 /* Aquí irá la fuente que usaremos para la web */
