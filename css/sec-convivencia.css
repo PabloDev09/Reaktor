@@ -1,8 +1,8 @@
 body{
-    background-color: white;
+    background-color: rgb(31, 155, 203);
 }
 .Contenido {
-    background-color: rgb(138, 138, 255);    
+    background-color: rgb(31, 155, 203);    
     margin-top: 0%;
     display: flex;
     justify-content: space-around;
@@ -12,24 +12,37 @@ nav{
     background-color: rgb(138, 138, 255);    
 }
 
-.botonaplicar a:hover{
+.botonaplicar:hover{
     color: purple;
 }
 .botonaplicar{
     margin-top: 2%;
     margin-left: 90%;
     max-width: min-content;
-    font-size: 150%;
+    font-size: 90%;
     font-style: italic;
     border-color: red;
     background-color: white;
+}
+
+.pdf{
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+    width: 100%;
+    margin-top: 0%;
+    
+}
+.pdf1{
+    width: 100%;
+    height: 100%;
 }
 .clases,
 .Puntos,
 .alumnos{
     display: inline-block;
     flex-direction: row;
-    max-width: 57%;
+    max-width: max-content;
     justify-content: space-between;
     padding-top: 0%;
     padding-bottom: 0%;
@@ -66,10 +79,12 @@ html{
 /*configuración de ventana*/
 .opcion{
     display: flex;
-    max-width: max-content;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .ventana{
-    background-color: rgb(138, 138, 255);    
+    background-color:rgb(31, 155, 203);    
     width:50%;
     padding: 1% 2%;
     margin: 20% auto;
@@ -106,7 +121,7 @@ img{
 }
 
 header{
-    background-color:   rgb(138, 138, 255);;
+    background-color: rgb(31, 155, 203);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -124,6 +139,7 @@ a, li{
 .nav-menu ul{
     display: flex;
     align-items: center;
+    background-color: rgb(31, 155, 203);
 }
 
 .nav-menu li{

@@ -29,10 +29,26 @@
             </div>
        </header>
     </div>
+    <div class="opcion"> 
+        <a href="#IrVentanaFlotante"> <!--Boton de aplicar tras haber seleccionado el alumno y la puntuación-->
+        <img src='img/Aulareflexion.jfif' width='50' title='desplegar ventana flotante'>¿Qué maestro se encuentra en la sala de reflexión?
+        </a>
+        </div>
+        
+        <div id="IrVentanaFlotante" class="modal">
+          <div class="ventana"><!--Link que hará que aparezca una ventana flotante donde se muestre el maestro en el aula de reflexión-->
+            <a href="#" style='text-decoration:none;'>
+            X
+            </a>
+            <h2>Docente actualmente de guardia:</h2>
+            <p>-Docente-</p> <!--En esta línea va el nombre del docente-->
+          </div>  
+        </div>
+
 <div class="contenido">
-    <div class="clases">
+    <div class="clases"> <!--Boton donde seleccionar el curso del alumno -->
         <select class="form-select" aria-label="Default select example">
-            <option selected>Clases</option>
+            <option selected>Cursos</option>
             <option value="1">1ºESO</option>
             <option value="2">2ºESO</option>
             <option value="3">3ºESO</option>
@@ -41,7 +57,7 @@
             <option value="6">2ºBachillerato</option>
           </select>
     </div>
-    <div class="Alumnos">
+    <div class="Alumnos"><!--Boton donde seleccionar el alumno, dependiendo del curso seleccionado -->
         <select class="form-select" aria-label="Default select example">
             <option selected>Alumnos</option>
             <option value="1">Alumno1</option>
@@ -54,7 +70,7 @@
             <option value="8">Alumno8</option>
           </select>
     </div>
-    <div class="Puntos">
+    <div class="Puntos"><!--Boton donde seleccionar la puntuación que merece el alumno-->
         <select class="form-select" aria-label="Default select example">
             <option selected>Puntos</option>
             <option value="1">-5</option>
@@ -73,35 +89,16 @@
     </div>
 </div>
 <div>
-    <button type="button" class="botonaplicar">Aplicar Puntuación</button>
+    <button type="button" class="botonaplicar">Aplicar Puntuación</button> 
 </div>
-        <ul>
-            <li><h1>Sistema de puntos</h1></li>
-            <ul>
-                <li><h2>-5</h2> "Acción grave del alumno hacia cualquier persona u objeto dentro del colegio"</li>
-                <li><h2>-4/-3</h2> "Mal comportamiento reiterado y grave con un profesor u otro alumno (Peleas)"</li>
-                <li><h2>-2/-1</h2> "Actos leves de mal comportamiento en clase"</li>
-                <li><h2>0</h2> "Alumno normal"</li>
-                <li><h2>1/2</h2>"Comportamiento normal"</li>
-                <li><h2>3/4</h2> "El alumno tiene un buen comportamiento normalmente y suele mostrar interés"</li>
-                <li><h2>5</h2> "El alumno tiene un buen comportamiento e interes continuamente además de respetar todas las normas de convivencia del centro"</li>
-            </ul>
-        </ul>
-        <div class="opcion"> 
-            <a href="#IrVentanaFlotante">
-            <img src='img/Aulareflexion.jfif' width='50' title='desplegar ventana flotante'>¿Qué maestro se encuentra en la sala de reflexión?
-            </a>
-            </div>
-            
-            <div id="IrVentanaFlotante" class="modal">
-              <div class="ventana">
-                <a href="#" style='text-decoration:none;'>
-                X
-                </a>
-                <h2>Maestro en el aula de reflexión</h2>
-                <p>"Nombre del maestro en ese momento"</p>
-              </div>  
-            </div>
+<div class="pdf">
+    <div class="pdf1">
+    <iframe src="img/Sistema de puntos.pdf" ></iframe>
+</div>
+</div>
+
+   
+
             
 </body>
 </html>
