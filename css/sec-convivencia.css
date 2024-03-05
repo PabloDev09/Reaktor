@@ -1,5 +1,5 @@
 body{
-    background-color: rgb(31, 155, 203);
+    background-color: skyblue;
 }
 .Contenido {
     background-color: rgb(31, 155, 203);    
@@ -82,6 +82,8 @@ html{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-color: skyblue;
+    
 }
 .ventana{
     background-color:rgb(31, 155, 203);    
