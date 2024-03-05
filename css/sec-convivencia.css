@@ -28,15 +28,12 @@ nav{
 .pdf{
     display: flex;
     flex-direction: row;
-    height: 20%;
+    height: 100%;
     width: 100%;
     margin-top: 0%;
     
 }
-.pdf1{
-    width: 100%;
-    height: 100%;
-}
+
 .clases,
 .Puntos,
 .alumnos{
