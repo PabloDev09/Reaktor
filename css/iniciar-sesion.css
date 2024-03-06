@@ -7,8 +7,9 @@
     padding: 0;
 }
 
-body{
+.index{
     min-height: 100vh;
+    background-color: rgb(241, 241, 224);
 }
 
 main{
@@ -24,6 +25,7 @@ main{
     box-shadow: 0 0 15px rgb(31, 155, 203);
     border: 1px solid;
     border-color: var(--main-color);
+    background-color: white;
 }
 
 .login h1{
