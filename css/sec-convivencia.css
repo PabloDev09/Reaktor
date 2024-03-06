@@ -1,6 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body{
     background-color: skyblue;
 }
+
 .Contenido {
     background-color: rgb(31, 155, 203);    
     display: flex;
@@ -10,6 +14,7 @@ body{
 
 .botonaplicar:hover{
     color: purple;
+    font-weight: bo;
     background-color: rgba(226, 131, 43, 0.411);
 }
 
