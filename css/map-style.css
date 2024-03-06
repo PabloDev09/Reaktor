@@ -3,7 +3,7 @@
 * {
     padding: 0;
     margin: 0;
-    font-size: 16px;
+    font-size: 16px; 
 }
 
 body{
@@ -15,34 +15,6 @@ body{
     --map-width: 300px;
     --map-height: 300px;
     --status-color: red;
-
-    /*con 2k 
-    --map-width:1404px;
-    --map-height:992px;*/
-
-    /*con 1920 * 1080
-    --map-width:1170px;
-    --map-height:827px;*/
-
-    /*con 1440 * 1050
-    --map-width:1100px;
-    --map-height:777px;*/
-
-    /*con 1366 * 768
-    --map-width:936px;
-    --map-height:662px;*/
-
-    /*con 1280 * 1024
-    --map-width:936px;
-    --map-height:662px;*/
-
-    /*con 1024 * 768
-    --map-width:936px;
-    --map-height:662px;*/
-
-    /*con 768 * 1024
-    --map-width:936px;
-    --map-height:662px;*/
 }
 
 @keyframes enfasis {
@@ -121,23 +93,24 @@ body{
 #contenedor-botones-plantas{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .caja-mapa {
     height: var(--map-height);
     width: var(--map-width);
-    border: 5px solid var(--status-color);
+    border: 3px solid var(--status-color);
     margin-top: 10px;
+
 }
 /*Panel contenedor de los modulos de la izquierda.*/
 #panel {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 10px;
+    padding: 5px;
     height: 913px;
-    background-color: rgb(243, 235, 243);
-    max-width: 15%;
+    width: 310px;
 }
 /*Aplica las reglas a todos los hijos del panel lateral izquierdo*/
 #panel>*{
@@ -146,7 +119,12 @@ body{
     background-color: rgb(255, 255, 255);
     padding:10px;
     margin: 5px;
-    display: fle;
+}
+
+#contenedor-botones-plantas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .titulo-djg{
@@ -163,7 +141,10 @@ body{
 #djg-main-box{
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    background-color: rgb(241, 241, 224);
 }
+
 
 #contenedor-botones-dimensiones {
     display: none;
@@ -235,9 +216,8 @@ button {
     padding-bottom: 8px !important;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
+    font-weight: bold;
 }
-
-
 
 #contenedor-botones-rotacion button:hover,
 .columna-dimensiones button:hover {
@@ -266,7 +246,7 @@ button {
     padding-bottom: 8px !important;
     margin-top: 0px !important;
     margin-bottom: 0px !important;
-    text-shadow: 1px 1px 1px blue;
+    font-weight: bold;
 }
 
 /*Propiedades comunes a todas las plantas*/

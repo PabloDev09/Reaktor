@@ -16,26 +16,24 @@
 
     <header class="header">
         <div class="logo-header">
-            <a href=""><img src="img/logo.jpg" alt="logo"></a>
+            <a href=""><img src="img/logo.png" alt="logo"></a>
         </div>
-
         <div class="nav-menu">
             <input type="checkbox" id="check">
             <label for="check" class="checkbtn">
                 <i class="menu-icon"><img src="img/menuhamburguesa.svg" alt="menu"></i>
             </label>
             <ul>
-                <li><a href="#link1">Administración</a></li>
-                <li><a href="#link2">Profesores</a></li>
-                <li><a href="#link3">Alumnos</a></li>
-                <li><a href="#link4">Horarios</a></li>
-                <li><a href="#link5">Convivencia</a></li>
+                <li><a href="admin.html">Administración</a></li>
+                <li><a href="docentes.html">Profesores</a></li>
+                <li><a href="alumnos.html">Alumnos</a></li>
+                <li><a href="horarios.html">Horarios</a></li>
+                <li><a href="convivencia.html">Convivencia</a></li>
                 <li><a href="planos.html">Mapas</a></li>
             </ul>
         </div>
    </header> 
-
-
+   
     <div id="djg-main-box">
         <div id="panel">
 
@@ -67,9 +65,9 @@
                 <center>
                 <!-- Botones de selección manual de planta -->
                 <div id="contenedor-botones-plantas"> 
-                    <button id="boton-planta-baja">Planta baja</button>
-                    <button id="boton-planta-primera">Planta primera</button>
-                    <button id="boton-planta-segunda">Planta segunda</button>
+                    <button id="boton-planta-baja">Planta<br/>baja</button>
+                    <button id="boton-planta-primera">Planta<br/>primera</button>
+                    <button id="boton-planta-segunda">Planta<br/>segunda</button>
                 </div>
                 <!-- este div solo sirve para reflejar al usuario el estado de la rotación, por defecto desactivada-->
                 <div id="indicador">Rotacion: Desactivada</div>
@@ -129,9 +127,8 @@
                 <p><strong>Cantidad de alumnos:</strong></p><p>  <span> Valor a rellenar mediante query </span> </p>
             </div>
             <!-- FIN  Caja donde se deberá renderizar la información recuperada mediante los endpoints y back-end -->
-
-
         </div>
+        
         <!-- INICIO Sección Mapas del centro -->
         <div class="contenedor">       
                 <!-- <div class="planta-baja-terrenos"></div> -->
