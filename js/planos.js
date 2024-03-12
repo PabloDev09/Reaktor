@@ -108,6 +108,7 @@ function reseteaEstadoBoton(elemento){
     elemento.classList.remove("boton-active-temp");  
 }
 
+/*Funcion invocada al pulsar el boton de planta baja. Esta función muestra los bloques de planta baja y oculta los que no son relevantes.*/ 
 function boton0func () {
     planta0.style.display = "block";
     planta1.style.display = "none";
@@ -273,6 +274,8 @@ const aula05 = document.getElementById("aula0-5");/* 1º dam*/
 const aula07 = document.getElementById("aula0-7");/* 2º dam*/
 const aula09 = document.getElementById("aula0-9");/* plastica*/
 const aula011 = document.getElementById("aula0-11");/* 1º bcs*/
+const aula109 = document.getElementById("aula1-9"); /*1º eso-c*/
+const aula209 = document.getElementById("aula2-9"); /*2º eso-c*/
 
 
 /* GUARRADA ABSURDA SOLO PARA FINES DEMOSTRATIVOS, BORRAR CUANDO APETEZCA*/
@@ -358,12 +361,15 @@ selectorCursos.addEventListener("change", function() {
     else if (this.value === "aula01") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula01);
+        boton0func();
+
         
     }
     /*2º FPB*/
     else if (this.value === "aula03") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula03);
+        boton0func();
     }
 
     /*1º DAM*/
@@ -371,6 +377,7 @@ selectorCursos.addEventListener("change", function() {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula05);
         hogan1();
+        boton0func();
     }
 
     /*2º DAM*/
@@ -378,30 +385,50 @@ selectorCursos.addEventListener("change", function() {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula07);
         hogan2();
+        boton0func();
     }
 
     /*3º DIVER*/
     else if (this.value === "aula02no") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula02no);
+        boton0func();
     }
 
     /*4º DIVER*/
     else if (this.value === "aula02su") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula02su);
+        boton0func();
     }
 
     /*Aula de plastica*/
     else if (this.value === "aula09") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula09);
+        boton0func();
     }
 
     /*1º BCS A*/
     else if (this.value === "aula011") {
     /* Marcamos el elemento html correspondiente */
     enfatiza(aula011);
+    boton0func();
+    }
+
+    /*1º ESO-c */
+    else if (this.value === "aula109") {
+    /* Marcamos el elemento html correspondiente */
+    enfatiza(aula109);
+    boton1func();
+    }
+
+    /*2º ESO-c */
+    else if (this.value === "aula209") {
+    /* Marcamos el elemento html correspondiente */
+    enfatiza(aula209);
+    boton2func();
     }
     }
+        
   );
