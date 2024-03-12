@@ -44,28 +44,33 @@ botonDimension4.onclick = function () {redimensiona('910px','1287px', this)};
 botonDimension5.onclick = function () {redimensiona('992px','1404px', this)};
 botonDimension6.onclick = function () {redimensiona('1984px','2808px', this)};
 
-/* Selector desplegable de dimensiones INICIO */
 
+
+
+
+
+
+/* Selector desplegable de dimensiones INICIO */
 document.querySelector('#selector-dimensiones').addEventListener("change", function() {
-    if (this.value === "res1") {
-        redimensiona('662px','936px', botonDimension1);
+        if (this.value === "res1") {
+            redimensiona('662px','936px', botonDimension1);
+        }
+        else if (this.value === "res2") {
+            redimensiona('777px','1100px', botonDimension2);
+        }
+        else if (this.value === "res3") {
+            redimensiona('827px','1170px', botonDimension3);
+        }
+        else if (this.value === "res4") {
+            redimensiona('910px','1287px', botonDimension4);
+        }
+        else if (this.value === "res5") {
+            redimensiona('992px','1404px', botonDimension5);
+        }
+        else if (this.value === "res6") {
+            redimensiona('1984px','2808px', botonDimension6);
+        }
     }
-    else if (this.value === "res2") {
-        redimensiona('777px','1100px', botonDimension2);
-    }
-    else if (this.value === "res3") {
-        redimensiona('827px','1170px', botonDimension3);
-    }
-    else if (this.value === "res4") {
-        redimensiona('910px','1287px', botonDimension4);
-    }
-    else if (this.value === "res5") {
-        redimensiona('992px','1404px', botonDimension5);
-    }
-    else if (this.value === "res6") {
-        redimensiona('1984px','2808px', botonDimension6);
-    }
-  }
   );
 /* selector desplegable dimensiones FIN */
 
@@ -270,6 +275,55 @@ const aula09 = document.getElementById("aula0-9");/* plastica*/
 const aula011 = document.getElementById("aula0-11");/* 1º bcs*/
 
 
+/* GUARRADA ABSURDA SOLO PARA FINES DEMOSTRATIVOS, BORRAR CUANDO APETEZCA*/
+
+const divX = document.getElementById("contenedor-info-box-endpoints");
+const caja = document.getElementById("planta-baja");
+
+/*FUNCION QUE VACÍA EL CONTENEDOR DE INFORMACION  "contenedor-info-box-endpoints" */
+function hogan0(){
+    divX.innerHTML = '<p class="titulo-djg">Información del aula.</p><p><span> Seleccione un aula. </span> </p>';
+    }
+
+/* FUNCION SOLO PARA DEMO - RELLENA CON INFOR EJEMPLO PARA EL CONTENEDOR DE INFORMACION  "contenedor-info-box-endpoints" */
+function hogan1(){
+divX.innerHTML = '<p class="titulo-djg">Información del aula.</p><p><strong>Curso:</strong></p><p> <span> 1º DAM </span> </p><p><strong>Tutor:</strong></p><p>  <span> Vicente Serrano </span> </p> <p><strong>Docente actual:</strong></p><p>  <span> Hulk Hogan </span> </p> <p><strong>Asignatura / módulo actual:</strong></p><p>  <span> Crochet competitivo </span> </p> <p><strong>Cantidad de alumnos:</strong></p><p>  <span> 15 </span> </p>';
+};
+
+/* FUNCION SOLO PARA DEMO - RELLENA CON INFOR EJEMPLO PARA EL CONTENEDOR DE INFORMACION  "contenedor-info-box-endpoints" */
+function hogan2(){
+divX.innerHTML = '<p class="titulo-djg">Información del aula.</p><p><strong>Curso:</strong></p><p> <span> 2º DAM </span> </p><p><strong>Tutor:</strong></p><p>  <span> Francisco Benitez </span> </p> <p><strong>Docente actual:</strong></p><p>  <span> George Orwell </span> </p> <p><strong>Asignatura / módulo actual:</strong></p><p>  <span> Cyber-seguridad y uso ético de los sistemas de vigilancia. </span> </p> <p><strong>Cantidad de alumnos:</strong></p><p>  <span> 1 </span> </p>';
+};
+
+aula05.onclick = function () {hogan1()};
+aula07.onclick = function () {hogan2()};
+
+const poppy = document.getElementById("cuadro");
+const poppy2 = document.getElementById("cuadro2");
+aula05.addEventListener('mouseover',function(){ aparece();});
+aula05.addEventListener('mouseout',function(){ desaparece();});
+aula07.addEventListener('mouseover',function(){ aparece2();});
+aula07.addEventListener('mouseout',function(){ desaparece2();});
+
+function aparece(){
+    poppy.classList.add('aparece');
+}
+
+function desaparece(){
+    poppy.classList.remove('aparece');
+}
+
+function aparece2(){
+    poppy2.classList.add('aparece');
+}
+
+function desaparece2(){
+    poppy2.classList.remove('aparece');
+}
+/* FINAL GUARRADA ABSURDA SOLO PARA FINES DEMOSTRATIVOS, BORRAR CUANDO APETEZCA*/
+
+
+
 /*Array de aulas*/
 /* Este array se usa en el bucle for para el limpiado del estado de enfasis*/
 const aulasArray = [aula01, aula02no, aula02su, aula03, aula05, aula07, aula09, aula011];
@@ -280,7 +334,7 @@ function reseteaEnfasisAulas(){
         aulasArray[aulaIndice].classList.remove('enfasis-aula');
     }
 }
-
+/*Aplica la clase de .enfasis al aula pasada como parámetro.*/
 function enfatiza(aula){
     aula.classList.add("enfasis-aula");
 }
@@ -296,6 +350,7 @@ selectorCursos.addEventListener("change", function() {
 
     /* Opcion para deseleccionar aulas */
     if (this.value === "0") {
+        hogan0(); /*Esta funcion es solo para mockup. borra cualquier referencia al inigualable Hulk Hogan que veas cuando quieras.*/
         /*La opción 0 no hace nada, es un placeholder para sencillamente resetear el estado del enfasis*/
     }
 
@@ -303,6 +358,7 @@ selectorCursos.addEventListener("change", function() {
     else if (this.value === "aula01") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula01);
+        
     }
     /*2º FPB*/
     else if (this.value === "aula03") {
@@ -314,12 +370,14 @@ selectorCursos.addEventListener("change", function() {
     else if (this.value === "aula05") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula05);
+        hogan1();
     }
 
     /*2º DAM*/
     else if (this.value === "aula07") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula07);
+        hogan2();
     }
 
     /*3º DIVER*/
