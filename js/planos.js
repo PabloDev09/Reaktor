@@ -180,11 +180,13 @@ function boton2funcAux () {
 
   function actualizaEstadoRotacion(){ root.style.setProperty('--status-color','red'); };
 
-boton0.onclick = function() {
+
+boton0.onclick = function() { bt0() };
+function bt0(elemento) {
     boton0funcAux(); actualizaEstadoRotacion();
     reseteaEstadoBoton(boton1);
     reseteaEstadoBoton(boton2);
-    this.classList.add("boton-active");
+    boton0.classList.add("boton-active");
     reseteaEstadoBoton(botonRotacion);
     reseteaEstadoBoton(botonLapso5);
     reseteaEstadoBoton(botonLapso10);
@@ -193,11 +195,12 @@ boton0.onclick = function() {
     reseteaEstadoBoton(botonLapso30); 
 };
 
-boton1.onclick = function() {
+boton1.onclick = function() {bt1(this) }; 
+function bt1(elemento) {
     boton1funcAux(); actualizaEstadoRotacion();
     reseteaEstadoBoton(boton0);
     reseteaEstadoBoton(boton2);
-    this.classList.add("boton-active");
+    boton1.classList.add("boton-active");
     reseteaEstadoBoton(botonRotacion);
     reseteaEstadoBoton(botonLapso5);
     reseteaEstadoBoton(botonLapso10);
@@ -206,12 +209,13 @@ boton1.onclick = function() {
     reseteaEstadoBoton(botonLapso30); 
 };
 
-boton2.onclick = function() {
+boton2.onclick = function() {bt2(this) };
+function bt2 (elemento) {
     boton2funcAux(); 
     actualizaEstadoRotacion();     
     reseteaEstadoBoton(boton1);
     reseteaEstadoBoton(boton0);
-    this.classList.add("boton-active");
+    boton2.classList.add("boton-active");
     reseteaEstadoBoton(botonRotacion);
     reseteaEstadoBoton(botonLapso5);
     reseteaEstadoBoton(botonLapso10);
@@ -329,7 +333,7 @@ function desaparece2(){
 
 /*Array de aulas*/
 /* Este array se usa en el bucle for para el limpiado del estado de enfasis*/
-const aulasArray = [aula01, aula02no, aula02su, aula03, aula05, aula07, aula09, aula011];
+const aulasArray = [aula01, aula02no, aula02su, aula03, aula05, aula07, aula09, aula011, aula109, aula209];
 
 /* Funcion que quita la clase de enfasis a los elementos en aulasArray*/
 function reseteaEnfasisAulas(){
@@ -361,15 +365,13 @@ selectorCursos.addEventListener("change", function() {
     else if (this.value === "aula01") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula01);
-        boton0func();
-
-        
+        bt0();
     }
     /*2º FPB*/
     else if (this.value === "aula03") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula03);
-        boton0func();
+        bt0();
     }
 
     /*1º DAM*/
@@ -377,7 +379,7 @@ selectorCursos.addEventListener("change", function() {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula05);
         hogan1();
-        boton0func();
+        bt0();
     }
 
     /*2º DAM*/
@@ -385,49 +387,51 @@ selectorCursos.addEventListener("change", function() {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula07);
         hogan2();
-        boton0func();
+        bt0();
     }
 
     /*3º DIVER*/
     else if (this.value === "aula02no") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula02no);
-        boton0func();
+        bt0();
     }
 
     /*4º DIVER*/
     else if (this.value === "aula02su") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula02su);
-        boton0func();
+        bt0();
     }
 
     /*Aula de plastica*/
     else if (this.value === "aula09") {
         /* Marcamos el elemento html correspondiente */
         enfatiza(aula09);
-        boton0func();
+        bt0();
     }
 
     /*1º BCS A*/
     else if (this.value === "aula011") {
     /* Marcamos el elemento html correspondiente */
     enfatiza(aula011);
-    boton0func();
+    bt0(this);
     }
 
     /*1º ESO-c */
     else if (this.value === "aula109") {
     /* Marcamos el elemento html correspondiente */
     enfatiza(aula109);
-    boton1func();
+    bt1(this);
+
     }
 
     /*2º ESO-c */
     else if (this.value === "aula209") {
     /* Marcamos el elemento html correspondiente */
     enfatiza(aula209);
-    boton2func();
+    bt2(this);
+
     }
     }
         
