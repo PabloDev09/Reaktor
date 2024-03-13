@@ -16,6 +16,8 @@ body {
 #docente {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #docente-profesor {
@@ -32,7 +34,6 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     padding: 12px;
-    padding-top: 1.6%;
 }
 
 #docente-profesor:hover, #docente-curso:hover {
