@@ -19,9 +19,11 @@
     font-family: 'Open Sans';
 }
 
-body {
+body{
     background-color: rgb(241, 241, 224);
+    font-family: 'Open Sans';
 }
+
 
 #docente {
     display: flex;

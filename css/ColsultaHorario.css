@@ -9,6 +9,11 @@
     font-weight: bold !important;
 }
 
+body{
+    background-color: rgb(241, 241, 224);
+    font-family: 'Open Sans';
+}
+
 #Horario{
 
     margin-top: 5%;
