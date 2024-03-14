@@ -143,7 +143,7 @@ table>body>tr>td>img{
     gap:10px;
 }
 
-.action-btn>a{
+.action-btn>button{
     text-decoration: none;
     color: white;
     background: white;
@@ -155,12 +155,12 @@ table>body>tr>td>img{
     transition: 0.3s ease-in-out;
 }
 
-.action-btn>a:nth-child(1){
+.action-btn>button:nth-child(1){
     border-color:rgb(31, 155, 203);
     background-color: skyblue;
 }
 
-.action-btn>a:nth-child(2){
+.action-btn>button:nth-child(2){
     border-color:rgb(31, 155, 203);
     background-color: skyblue;
 }
