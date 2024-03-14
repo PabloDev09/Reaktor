@@ -1,3 +1,14 @@
+/*Resalta el boton de la barra de navegación de la sección para las migajas*/
+.nav-menu li:nth-child(4){
+    background-color: rgb(222, 252, 253) !important;
+    border-color: rgb(0, 0, 0);
+}
+/*Resalta el boton de la barra de navegación de la sección para las migajas*/
+.nav-menu li:nth-child(4) a{
+    color: rgb(34, 46, 83) !important;
+    font-weight: bold !important;
+}
+
 #Horario{
 
     margin-top: 5%;
