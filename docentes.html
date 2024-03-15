@@ -1,3 +1,11 @@
+<!-- 
+    (Comentario de Abel de 1º DAM para Pablo de 2º DAM)
+    En el último commit implementé la función que querías de que el formulario de cada consulta
+    estuviese oculto por defecto y tuvieses que darle a un botón para que apareciese. Seguramente
+    haya formas mucho más eficientes de hacerlo pero no tengo ni idea de JS. Puedes volver al commit
+    anterior si ves que te resulta más eficiente hacerlo tú de otra forma.
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -29,11 +37,91 @@
        </header> 
         <br>
         <main>
+            <div id="button-container">
+                <button id="button-docente-display">Buscar por Docente</button>
+                <script>
+                    var visibilidadActual = 0; // Variable para almacenar el estado actual de la visibilidad
+                    var backgroundColorActual = 0; // Variable para almacenar el background color actual
+                    var colorActual = 0; // Variable para almacenar el color actual
+
+                    document.getElementById("button-docente-display").addEventListener("click", function() {
+
+                    // Cambiar la visibilidad basada en el estado actual
+                    if (visibilidadActual === 0) {
+                        document.getElementById("docente-profesor").style.visibility = "visible";
+                        visibilidadActual++;
+
+                    } else {
+                        document.getElementById("docente-profesor").style.visibility = "hidden";
+                        visibilidadActual--;
+                    }
+
+                    // Cambiar background color
+                    if (backgroundColorActual === 0) {
+                        document.getElementById("button-docente-display").style.backgroundColor = "#000000";
+                        backgroundColorActual++;
+
+                    } else {
+                        document.getElementById("button-docente-display").style.backgroundColor = "#1f9bcb";
+                        backgroundColorActual--;
+                    }
+
+                    // Cambiar color
+                    if (colorActual === 0) {
+                        document.getElementById("button-docente-display").style.color = "#ffffff";
+                        colorActual++;
+
+                    } else {
+                        document.getElementById("button-docente-display").style.color = "#000000";
+                        colorActual--;
+                    }
+
+                    });
+                </script>
+                <button id="button-curso-display">Buscar por Curso</button>
+                <script>
+                    var visibilidadActual = 0;
+                    var backgroundColorActual = 0;
+                    var colorActual = 0;
+
+                    document.getElementById("button-curso-display").addEventListener("click", function() {
+
+                    if (visibilidadActual === 0) {
+                        document.getElementById("docente-curso").style.visibility = "visible";
+                        visibilidadActual++;
+
+                    } else {
+                        document.getElementById("docente-curso").style.visibility = "hidden";
+                        visibilidadActual--;
+                    }
+
+                    if (backgroundColorActual === 0) {
+                        document.getElementById("button-curso-display").style.backgroundColor = "#000000";
+                        backgroundColorActual++;
+
+                    } else {
+                        document.getElementById("button-curso-display").style.backgroundColor = "#1f9bcb";
+                        backgroundColorActual--;
+                    }
+
+                    if (colorActual === 0) {
+                        document.getElementById("button-curso-display").style.color = "#ffffff";
+                        colorActual++;
+
+                    } else {
+                        document.getElementById("button-curso-display").style.color = "#000000";
+                        colorActual--;
+                    }
+
+                    });
+                </script>
+            </div>
+                
             <div id="docente">
                 <!-- Endpoints 7 y 8: introduce nombre y apellidos del profesor y devuelve aula dónde se encuentra y asignatura impartida -->
                 <div id="docente-profesor">
                     <label for="profesor">Profesor: </label>
-                    <select name="profesor" id="profesor">
+                    <select name="profesor" id="profesor"> <!-- Se alimentará con un endpoint con la lista de profesores del instituto -->
                         <option value="default">Selecciona un profesor</option>
                         <option value="Carlos Cano Ladera">Carlos Cano Ladera</option>
                         <option value="Encarnación Perálvarez Aguilera">Encarnación Perálvarez Aguilera</option>
@@ -63,12 +151,12 @@
                     <input type="date" id="dia"> <!-- Aparece por defecto el día actual -->
                     <script>document.getElementById("dia").valueAsDate = new Date();</script>
                     <br><br>
-                    <button class="button-docente">Buscar por docente</button>
+                    <button class="button-docente">Buscar curso</button>
                 </div>
 
                 <!-- Endpoint 9: introduce nombre del curso y recibe nombre del profesor y asignatura impartida en el momento actual -->
                 <div id="docente-curso">
-                    <label for="curso">Curso: </label>
+                    <label for="curso">Curso: </label> <!-- Se alimentará con un endpoint con la lista de cursos del instituto -->
                     <select name="curso" id="curso">
                         <option value="default">Selecciona un curso</option>
                         <option value="1º ESO">1º ESO</option>
@@ -83,11 +171,12 @@
                         <option value="2º DAW">2º DAW</option>
                     </select>
                     <br><br>
-                    <button class="button-docente">Buscar por curso</button> <!-- Devolverá qué profesor se encuentra en el aula actualmente o en el tramo horario elegido y asignatura impartida -->
+                    <button class="button-docente">Buscar profesor</button> <!-- Devolverá qué profesor se encuentra en el aula actualmente y la asignatura impartida -->
                 </div>
             </div>
             <br><hr><br>
-            <div id="docente-guardia"> <!-- Mostrará nombres del profesor que falta y profesor sustituto por cada hora y clase -->
+            <!-- Excel con info del profesorado de guardia: Mostrará nombres del profesor que falta y profesor sustituto por cada hora y clase -->
+            <div id="docente-guardia">
                 <iframe id="hoja-calculo" src="https://onedrive.live.com/embed?resid=370B3DAE70E66DD4%212895&authkey=!AEWXzF8NKl6X2lo&em=2"></iframe>
             </div>
         </main>

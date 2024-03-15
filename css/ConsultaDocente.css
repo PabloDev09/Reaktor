@@ -18,6 +18,7 @@ body {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 20px;
 }
 
 #docente-profesor {
@@ -26,6 +27,7 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     padding: 12px;
+    visibility: hidden;
 }
 
 #docente-curso {
@@ -34,10 +36,11 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     padding: 12px;
+    visibility: hidden;
 }
 
 #docente-profesor:hover, #docente-curso:hover {
-    box-shadow: 0 0 5px rgb(97, 172, 173);
+    box-shadow: 0 0 10px rgb(97, 172, 173);
 }
 
 #hoja-calculo {
@@ -47,15 +50,29 @@ body {
 }
 
 .button-docente {
-    background-color: rgb(31, 155, 203);
+    background-color: hsl(197, 74%, 46%);
     border-radius: 5px;
     padding: 3px;
 }
 
 .button-docente:hover {
-    background-color: hsl(197, 74%, 43%);
+    background-color: hsl(197, 74%, 41%);
 }
 
-.button-docente:active {
-    background-color: hsl(197, 74%, 43%);
+#button-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#button-docente-display, #button-curso-display {
+    background-color: rgb(31, 155, 203);
+    border-radius: 5px;
+    padding: 3px;
+}
+
+/* No sé por qué este estilo se deja de aplicar una vez se clickea el botón */
+#button-docente-display:hover, #button-curso-display:hover {
+    background-color: hsl(197, 74%, 41%);
 }
