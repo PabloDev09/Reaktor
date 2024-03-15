@@ -1,3 +1,19 @@
+/*Resalta el boton de la barra de navegación de la sección para las migajas*/
+.nav-menu li:nth-child(1){
+    background-color: rgb(222, 252, 253) !important;
+    border-color: rgb(0, 0, 0);
+}
+/*Resalta el boton de la barra de navegación de la sección para las migajas*/
+.nav-menu li:nth-child(1) a{
+    color: rgb(34, 46, 83) !important;
+    font-weight: bold !important;
+}
+
+body{
+    background-color: rgb(241, 241, 224) !important;
+    font-family: 'Open Sans';
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 *{
     font-size: 16px;
@@ -7,6 +23,8 @@
     background-color: #f2f2f2;
 }
 .fondo_cuadrado{
+    padding-top: 10px;
+    padding-bottom: 10px;
     background-color: white;
     width: 80%;
     height: auto;

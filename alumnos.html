@@ -112,7 +112,6 @@
 
         <!--Tabla 1: Hace referencia al registro de ida y vuelta del baño de un alumno-->
 
-        
         <div class="table-title">
             <h2>Registrar ida y vuelta</h2>
         </div>
@@ -153,8 +152,20 @@
                         <td>1 ESO A</td>
                         <td>
                             <span class="action-btn">
-                                <a href="#">Ida</a>
-                                <a href="#">Vuelta</a>
+
+                                <button id="boton1">Ida</button>
+                                <button id="boton2" disabled>Vuelta</button>
+                                <script>
+                                document.getElementById('boton1').addEventListener('click', function() {
+                                    this.disabled = true; // Desactivar el primer botón
+                                    document.getElementById('boton2').disabled = false; // Habilitar el segundo botón
+                                });
+                                document.getElementById('boton2').addEventListener('click', function() {
+                                    this.disabled = true; // Desactivar el segundo botón
+                                    document.getElementById('boton1').disabled = true; // Desactivar también el primer botón
+                                });
+                                </script>
+
                             </span>
                         </td>
                     </tr>
@@ -187,9 +198,13 @@
                 </div>
 
                 <div class="date">
-                    <span>Periodo</span>
-                    <input type="search" class="date-search" placeholder="Fecha inicio">
-                    <input type="search" class="date-search" placeholder="Fecha fin">
+                    <label for="dia">Inicio: </label>
+                    <input type="date" id="dia"> 
+                    <script>document.getElementById("dia").valueAsDate = new Date();</script>
+
+                    <label for="dia">Fin: </label>
+                    <input type="date" id="dia"> 
+                    <script>document.getElementById("dia").valueAsDate = new Date();</script>
                 </div>
     
             </div>
@@ -247,9 +262,13 @@
             <div class="configuration-header">
 
                 <div class="date">
-                    <span>Periodo</span>
-                    <input type="search" class="date-search" placeholder="Fecha inicio">
-                    <input type="search" class="date-search" placeholder="Fecha fin">
+                    <label for="dia">Inicio: </label>
+                    <input type="date" id="dia"> 
+                    <script>document.getElementById("dia").valueAsDate = new Date();</script>
+
+                    <label for="dia">Fin: </label>
+                    <input type="date" id="dia"> 
+                    <script>document.getElementById("dia").valueAsDate = new Date();</script>
                 </div>
     
             </div>

@@ -1,3 +1,14 @@
+/*Resalta el boton de la barra de navegación de la sección para las migajas*/
+.nav-menu li:last-child{
+    background-color: rgb(222, 252, 253) !important;
+    border-color: rgb(0, 0, 0);
+}
+/*Resalta el boton de la barra de navegación de la sección para las migajas*/
+.nav-menu li:last-child a{
+    color: rgb(34, 46, 83) !important;
+    font-weight: bold !important;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 /* Esta clase solo está para que la demo de la caja de información*/ 

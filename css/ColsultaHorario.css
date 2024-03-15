@@ -1,38 +1,105 @@
+/*Resalta el boton de la barra de navegación de la sección para las migajas*/
+.nav-menu li:nth-child(4){
+    background-color: rgb(222, 252, 253) !important;
+    border-color: rgb(0, 0, 0);
+}
+/*Resalta el boton de la barra de navegación de la sección para las migajas*/
+.nav-menu li:nth-child(4) a{
+    color: rgb(34, 46, 83) !important;
+    font-weight: bold !important;
+}
+
+body{
+    background-color: rgb(241, 241, 224);
+    font-family: 'Open Sans';
+}
+
 #Horario{
 
-    margin-top: 5%;
     display: flex;
     justify-content: space-around;
-
+    flex-wrap: wrap;
+    background-color: rgb(148, 200, 241);
+    padding: 1%;    
 }
-
-#horario-seleccionar-maestro{
+#horario-seleccionar-Profesor{
 
     width: 20%;
     text-align: center;
+    min-width: 250px;
+    max-width: 100%;
+    margin: 5px;
+    background-color: lightblue;
+    padding: 5px;
+    border-radius: 5px;
 
 }
+#horario-seleccionar-Profesor select{
+    margin: 10px;
+}
 
-#horario-todos-maestros{
+#horario-seleccionar-Profesor input{
+    padding: 5px;
+}
+
+#horario-todos-Profesores{
 
     width: 20%;
     text-align: center;
+    min-width: 225px;
+    max-width: 100%;
+    margin: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
 
+}
+
+#horario-todos-Profesores button{
+    margin: 10%;
+    padding: 5px;
 }
 
 #horario-seleccionar-grupo{
 
     width: 20%;
     text-align: center;
+    min-width: 150px;
+    max-width: 100%;
+    margin: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
 
 }
+
+#horario-seleccionar-grupo select{
+    margin: 10px;
+}
+
+#horario-seleccionar-grupo input{
+    padding: 5px;
+}
+
+
 
 #horario-todos-grupos{
     
     width: 20%;
     text-align: center;
-
+    min-width: 150px;
+    max-width: 100%;
+    margin: 5px;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 5px;
+    
 }
+#horario-todos-grupos button{
+    margin: 10%;
+    padding: 5px;
+}
+
 
 #horarios-container{
     min-height: 100%;
